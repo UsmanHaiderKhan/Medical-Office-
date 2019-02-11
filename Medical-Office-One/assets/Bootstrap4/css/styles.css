@@ -1,6 +1,23 @@
 ﻿/*================================= 
         Font-Family's Start
-  =================================*
+  =================================*/
+
+
+@font-face {
+    font-family: 'Adelle-ExtraBold';
+    src: url('../../Fonts/Adelle-ExtraBold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'PillGothic600mg-Bold';
+    src: url('../../Fonts/PillGothic600mg-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PillGothic600mg-Semibd';
+    src: url('../../Fonts/PillGothic600mg-Semibd.ttf') format('truetype');
+}
+
 /*================================= 
         Font-Family's End
   =================================*/
@@ -19,6 +36,198 @@ html, body {
 
 /*================================= 
           Navbar Styling
+  =================================*/
+.banner-content {
+    width: 100%;
+    top: 50%;
+}
+
+.banner-text {
+    font-size: 80px;
+    color: #000000;
+    text-transform: uppercase;
+    font-family: 'Adelle-ExtraBold';
+}
+
+.banner-desc {
+    font-size: 32px;
+    color: #1d1d1f;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav-bg-color {
+    background-color: rgba(255, 255, 255, 0.702);
+    opacity: 0.702;
+    width: 100%;
+    height: auto;
+}
+
+.nav-trans {
+    transition: padding 400ms linear;
+}
+
+.active {
+    color: #743276 !important;
+    font-weight: bold;
+    font-family: 'PillGothic600mg-Bold';
+}
+
+#HOME {
+    padding: 16% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navbar-brand .logoimage1 {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-brand .logo1.scrolled {
+    margin-top: 0;
+    max-width: 81%;
+    color: #ffffff;
+    transition: width 400ms linear;
+}
+
+.nav-item {
+    position: relative;
+    padding: 8px;
+}
+
+.fixed-top.scrolled {
+    background-color: #060606;
+}
+
+.navbar-nav.scrolled {
+    margin-top: 0;
+    overflow: hidden;
+}
+
+#HOME .navbar-light .navbar-nav .nav-link {
+    color: #000000;
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: 'PillGothic600mg-Bold';
+}
+
+    #HOME .navbar-light .navbar-nav .nav-link.scrolled {
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 17px;
+        text-decoration: none;
+        background-color: transparent;
+        transition: font-size 400ms linear;
+        font-family: 'PillGothic600mg-Bold';
+    }
+
+.btn-contact {
+    color: white;
+    width: 300px;
+    height: 100px;
+    font-size: 26px;
+    border-radius: 50px;
+    line-height: 88px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    background-image: -moz-linear-gradient( 90deg, rgb(108,45,111) 0%, rgb(158,82,159) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(108,45,111) 0%, rgb(158,82,159) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(108,45,111) 0%, rgb(158,82,159) 100%);
+}
+
+    .btn-contact:hover {
+        color: white;
+    }
+
+/*================================= 
+          Details Section Styling
+  =================================*/
+.card {
+    border: 0;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.bg-color-one {
+    width: 100%;
+    height: auto;
+    padding: 40px 20px;
+    background: #9b51a0;
+}
+
+
+
+.bg-color-three {
+    width: 100%;
+    height: auto;
+    background: #703271;
+}
+
+.address-text {
+    color: #ffffff;
+    font-size: 40px;
+    vert-align: middle !important;
+    text-transform: uppercase;
+    font-family: 'PillGothic600mg-Bold';
+}
+
+.address-desc {
+    color: #ffffff;
+    font-size: 23px;
+    font-family: 'PillGothic600mg-Semibd';
+}
+
+.phone-text {
+    color: #ffffff;
+    font-size: 40px;
+    vert-align: middle !important;
+    text-transform: uppercase;
+    font-family: 'PillGothic600mg-Bold';
+}
+
+.phone-no {
+    color: #fff568;
+    font-size: 27px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.bg-color-two {
+    width: 100%;
+    height: auto;
+    padding: 40px 20px;
+    background: #7b3d7e;
+}
+
+.open-text {
+    font-size: 36px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'PillGothic600mg-Semibd';
+}
+
+.time-text {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+
+
+
+/*================================= 
+          Read More Styling
   =================================*/
 
 .comments-space {
