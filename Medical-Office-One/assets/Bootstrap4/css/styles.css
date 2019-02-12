@@ -34,6 +34,9 @@ html, body {
     scroll-behavior: smooth;
 }
 
+.nav-color {
+    background: #1d2228;
+}
 /*================================= 
           Navbar Styling
   =================================*/
@@ -147,6 +150,10 @@ html, body {
 /*================================= 
           Details Section Styling
   =================================*/
+#card_section {
+    background-color: #f4f4f4;
+}
+
 .card {
     border: 0;
 }
@@ -160,14 +167,6 @@ html, body {
     height: auto;
     padding: 40px 20px;
     background: #9b51a0;
-}
-
-
-
-.bg-color-three {
-    width: 100%;
-    height: auto;
-    background: #703271;
 }
 
 .address-text {
@@ -220,12 +219,243 @@ html, body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.bg-color-three {
+    width: 100%;
+    height: auto;
+    padding: 40px 20px;
+    background: #703271;
+}
+
+.request-text {
+    font-size: 31px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'PillGothic600mg-Bold';
+}
+
+.label-text {
+    font-size: 21px;
+    color: #ffffff;
+    font-family: 'PillGothic600mg-Bold';
+}
+
+.input-text {
+    width: 100%;
+    height: 52px;
+    border-width: 2px;
+    padding: 20px;
+    border-color: rgb(204, 204, 204);
+    border-style: solid;
+    border-radius: 26px;
+    background: transparent;
+}
+
+::placeholder {
+    font-size: 18px !important;
+    color: #9d7e9e !important;
+    font-family: 'PillGothic600mg-Semibd' !important;
+}
+
+.btn-send {
+    height: 54px;
+    font-size: 16px;
+    color: #dfdfdf;
+    border-width: 2px;
+    border-color: rgb(204, 204, 204);
+    border-style: solid;
+    border-radius: 26px;
+    text-transform: uppercase;
+    font-family: 'PillGothic600mg-Bold';
+    background-color: rgb(155, 81, 160);
+}
+
+
+/*================================= 
+       About Section Styling
+  =================================*/
+#about-us {
+    padding: 80px 0;
+    background: #f4f4f4;
+}
+
+.working-area {
+    padding: 0 60px;
+}
+
+.about-text {
+    color: #0c0c0c;
+    font-size: 46px;
+    font-weight: bold;
+    font-family: 'PillGothic600mg-Bold';
+}
+
+.text-desc {
+    color: #0c0c0c;
+    font-size: 32px;
+    font-family: 'PillGothic600mg-Semibd';
+}
+
+.about-text-desc {
+    color: #383838;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.lara-text {
+    color: #0c0c0c;
+    font-size: 36px;
+    font-family: 'PillGothic600mg-Semibd';
+}
+
+.phy-text {
+    color: #703271;
+    font-size: 26px;
+    font-family: 'PillGothic600mg-Semibd';
+}
+
+.quality-text {
+    color: #272727;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'PillGothic600mg-Bold';
+}
+
+.cards {
+    border-top: 10px solid rgb(241, 149, 65);
+    border-bottom: 10px solid rgb(241, 149, 65);
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.cards1 {
+    border-top: 10px solid rgb(123, 61, 126);
+    border-bottom: 10px solid rgb(123, 61, 126);
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.cards2 {
+    border-top: 10px solid rgb(0, 169, 157);
+    border-bottom: 10px solid rgb(0, 169, 157);
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.card-padding {
+    padding: 70px 30px;
+}
+
+.why-setting {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 70px;
+}
+
+.why-text {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'PillGothic600mg-Bold';
+}
+
+.why-desc {
+    color: #cfbdd0;
+    font-size: 25px;
+    font-family: 'PillGothic600mg-Semibd';
+}
+
+.circle-shape {
+    width: 75px;
+    height: 75px;
+    line-height: 34px;
+    padding: 25px;
+    font-size: 37px;
+    color: #7b3d7e;
+    border-radius: 50%;
+    font-family: 'PillGothic600mg-Bold';
+    background-color: rgb(255, 255, 255);
+}
+
+.why-pera-text {
+    font-size: 19px;
+    color: #ffffff;
+    font-family: 'PillGothic600mg-Semibd';
+}
+
+.why-bg-color {
+    padding: 20px 20px;
+    border-radius: 50px;
+    height: 163px;
+    width: 100%;
+    background-color: #7b3d7e;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
+
+.question-text {
+    color: #222222;
+    font-size: 53px;
+    text-transform: uppercase;
+    font-family: 'PillGothic600mg-Bold';
+}
+
+.question-color {
+    color: #7b3d7e;
+}
+
+h1 {
+    overflow: hidden;
+    text-align: center;
+}
+
+    h1:before,
+    h1:after {
+        background-color: #7b3d7e;
+        content: "";
+        display: inline-block;
+        height: 3px;
+        position: relative;
+        vertical-align: middle;
+        width: 14%;
+    }
+
+    h1:before {
+        right: 0.5em;
+        margin-left: -50%;
+    }
+
+    h1:after {
+        left: 0.5em;
+        margin-right: -50%;
+    }
 
 
 
 
+.nav-tab-color {
+    background-color: rgb(155, 81, 160);
+    width: 100%;
+    padding: 40px 0;
+    height: 154px;
+}
 
-
+.nav-tab-text {
+    color: #ffffff;
+    font-size: 36px;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'PillGothic600mg-Bold';
+}
 /*================================= 
           Read More Styling
   =================================*/
@@ -257,6 +487,10 @@ html, body {
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
 }
+
+
+
+
 
 
 /*=================== Custome Margins ===================*/
@@ -489,6 +723,18 @@ html, body {
     margin-top: 34px;
 }
 
+.mt-33 {
+    margin-top: 32px;
+}
+
+.mt-32 {
+    margin-top: 32px;
+}
+
+.mt-31 {
+    margin-top: 31px;
+}
+
 .mt-30 {
     margin-top: 30px;
 }
@@ -519,6 +765,10 @@ html, body {
 
 .mt-15 {
     margin-top: 15px;
+}
+
+.mt-10 {
+    margin-top: 10px;
 }
 /*=========== Margin Bottom ===========*/
 .mb-100 {
