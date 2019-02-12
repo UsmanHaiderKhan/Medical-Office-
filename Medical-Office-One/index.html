@@ -12,14 +12,13 @@
     <link href="assets/Bootstrap4/css/owl.theme.default.min.css" rel="stylesheet" />
     <link href="assets/Bootstrap4/LightBox/dist/css/lightbox.min.css" rel="stylesheet" />
     <link href="assets/Bootstrap4/css/jquery-ui.css" rel="stylesheet" />
-    <!--<link href="assets/Bootstrap4/css/imagehover.min.css" rel="stylesheet" />-->
     <link href="assets/Bootstrap4/css/styles.css" rel="stylesheet" />
     <title>Medical-Office Theme | One</title>
 </head>
 <body>
     <!------------------- Home Section ------------------>
     <section id="HOME" style="background-image: url('assets/Images/main-banner.png');">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top nav-trans nav-bg-color">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top nav-bg-color">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
                     <img src="assets/Images/logo.png" alt="Alternate Text" class="img-fluid" />
@@ -63,66 +62,348 @@
             </div>
         </div>
     </section>
-    <section id="card_section" style="margin-top: -72px;">
+    <section id="card_section">
         <!-- Card -->
         <div class="container">
-            <div class="card">
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-sm-3 bg-color-one">
-                            <div class="media">
-                                <img src="assets/Images/location.png" />
-                                <div class="media-body">
-                                    <h2 class="address-text ml-3">Address</h2>
+            <div style="margin-top: -110px">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-3 bg-color-one">
+                                <div class="media">
+                                    <img src="assets/Images/location.png" />
+                                    <div class="media-body">
+                                        <h2 class="address-text ml-3">Address</h2>
+                                    </div>
+                                </div>
+                                <div class="mt-25">
+                                    <p class="address-desc">
+                                        10 New Cather Lane Atlanta LA 72190, USA
+                                    </p>
+                                </div>
+                                <div class="media mt-55">
+                                    <img src="assets/Images/phone.png" />
+                                    <div class="media-body">
+                                        <h2 class="phone-text ml-3">Contact</h2>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="phone-no">
+                                        +1 (315) 8788 7983
+                                    </p>
                                 </div>
                             </div>
-                            <div class="mt-25">
-                                <p class="address-desc">
-                                    10 New Cather Lane Atlanta LA 72190, USA
+                            <div class="col-sm-4 bg-color-two">
+                                <div class="media">
+                                    <img src="assets/Images/watch.png" />
+                                    <div class="media-body">
+                                        <h2 class="open-text ml-2">Opening Hours</h2>
+                                    </div>
+                                </div>
+                                <p class="time-text mt-28">
+                                    Mon <span class="float-right">10:00am 8:00pm</span>
+                                </p>
+                                <p class="time-text">
+                                    Tue <span class="float-right">10:00am 8:00pm</span>
+                                </p>
+                                <p class="time-text">
+                                    Wed <span class="float-right">10:00am 8:00pm</span>
+                                </p>
+                                <p class="time-text">
+                                    Thu <span class="float-right">10:00am 8:00pm</span>
+                                </p>
+                                <p class="time-text">
+                                    Fri <span class="float-right">10:30am 7:00pm</span>
+                                </p>
+                                <p class="time-text">
+                                    Sat <span class="float-right">11:00am 6:00pm</span>
+                                </p>
+                                <p class="time-text">
+                                    Sun <span class="float-right">CLOSED</span>
                                 </p>
                             </div>
-                            <div class="media mt-55">
-                                <img src="assets/Images/phone.png" />
-                                <div class="media-body">
-                                    <h2 class="phone-text ml-3">Contact</h2>
+                            <div class="col-sm-5 bg-color-three">
+                                <div class="media">
+                                    <img src="assets/Images/calender.png" />
+                                    <div class="media-body">
+                                        <h2 class="request-text ml-3">Request An Appointment</h2>
+                                    </div>
                                 </div>
-                            </div>
-                            <div>
-                                <p class="phone-no">
-                                    +1 (315) 8788 7983
-                                </p>
+                                <form action="/" method="post">
+                                    <div class="row mt-50">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="label-text">Your Name :</label>
+                                                <input type="text" class="input-text" name="name" value="" placeholder="Name" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="label-text">Your Phone Number :</label>
+                                                <input type="text" class="input-text" name="name" value="" placeholder="Phone number" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="label-text">Select date :</label>
+                                                <input type="text" class="input-text" name="name" value="" placeholder="Choose a date" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mt-40">
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-send btn-block">Send Request</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
-                        <div class="col-sm-4 bg-color-two">
-                            <div class="media">
-                                <img src="assets/Images/watch.png" />
-                                <div class="media-body">
-                                    <h2 class="open-text ml-2">Opening Hours</h2>
-                                </div>
-                            </div>
-                            <p class="time-text mt-28">
-                                Mon <span class="float-right">10:00am 8:00pm</span>
-                            </p>
-                            <p class="time-text">
-                                Tue <span class="float-right">10:00am 8:00pm</span>
-                            </p>
-                            <p class="time-text">
-                                Wed <span class="float-right">10:00am 8:00pm</span>
-                            </p>
-                            <p class="time-text">
-                                Wed <span class="float-right">10:00am 8:00pm</span>
-                            </p>
-                            <p class="time-text">
-                                Wed <span class="float-right">10:00am 8:00pm</span>
-                            </p>
-                        </div>
-                        <div class="col-sm-5 bg-color-three"></div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Card -->
     </section>
+    <section id="about-us">
+        <div class="working-area">
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <img src="assets/Images/doc.png" class="img-fluid" />
+                    <h2 class="about-text mt-46">About Us</h2>
+                </div>
+                <div class="col-md-7">
+                    <h2 class="text-desc text-center">
+                        We offer you the best quality services with minimal pain rate & exciting treatment plans
+                    </h2>
+                    <p class="about-text-desc text-center mt-28">
+                        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                    </p>
+                </div>
+                <div class="col-md-2">
+                    <div class="float-right">
+                        <h2 class="lara-text ">Lara craft</h2>
+                        <p class="phy-text ml-3">Psychiatrist</p>
+                        <img src="assets/Images/sign.png" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-110">
+                <div class="col-md-4">
+                    <div class="cards">
+                        <div class="card-padding">
+                            <div class="text-center">
+                                <img src="assets/Images/star.png" />
+                                <div class="text-center">
+                                    <h2 class="quality-text mt-40">Good Quality Service</h2>
+                                    <p class="mt-25">
+                                        Ut fusce varius nisl ac ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cards1">
+                        <div class="card-padding">
+                            <div class="text-center">
+                                <img src="assets/Images/cup.png" class="mt-10" />
+                                <div class="text-center">
+                                    <h2 class="quality-text mt-48">30 Year Experience</h2>
+                                    <p class="mt-25">
+                                        Ut fusce varius nisl ac ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cards2">
+                        <div class="card-padding">
+                            <div class="text-center">
+                                <img src="assets/Images/radius.png" />
+                                <div class="text-center">
+                                    <h2 class="quality-text mt-40">Emergencey Help</h2>
+                                    <p class="mt-25">
+                                        Ut fusce varius nisl ac ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="why">
+        <div class="why-setting" style="background-image: url('assets/Images/why-banner.png');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <h2 class="text-center why-text">Why US</h2>
+                        <p class="why-desc">
+                            Sapien elit in malesuada semper mi, id sollicitudin urna fermentum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-110">
+                <div class="col-md-4 why-bg-color">
+                    <div class="media">
+                        <p class="why-pera-text" style=" text-align: right;">
+                            Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac.
+                        </p>
+                        <div class="media-body">
+                            <p class="circle-shape ml-3">1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-relative">
+                        <div class="p-absolute">
+                            <img src="assets/Images/banner-images.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 why-bg-color">
+                    <div class="media">
+                        <p class="circle-shape mr-3">4</p>
+                        <div class="media-body">
+                            <p class="why-pera-text" style="text-align: left;">
+                                Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 why-bg-color mt-5">
+                    <div class="media">
+                        <p class="why-pera-text" style=" text-align: right;">
+                            Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod.
+                        </p>
+                        <div class="media-body">
+                            <p class="circle-shape ml-3">2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 why-bg-color float-right">
+                    <div class="media">
+                        <p class="circle-shape mr-3">5</p>
+                        <div class="media-body">
+                            <p class="why-pera-text" style="text-align: left;">
+                                Tincidunt integer eu augue augue nunc elit dolor,luctus placerat scelerisque euismod.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 why-bg-color mt-5">
+                    <div class="media">
+                        <p class="why-pera-text" style=" text-align: right;">
+                            Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod.
+                        </p>
+                        <div class="media-body">
+                            <p class="circle-shape ml-3">2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 why-bg-color mt-5">
+                    <div class="media">
+                        <p class="why-pera-text" style=" text-align: right;">
+                            Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod.
+                        </p>
+                        <div class="media-body">
+                            <p class="circle-shape ml-3">2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 why-bg-color mt-5">
+                    <div class="media">
+                        <p class="why-pera-text" style=" text-align: right;">
+                            Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod.
+                        </p>
+                        <div class="media-body">
+                            <p class="circle-shape ml-3">2</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="ask-question">
+        <div class="container">
+            <div class="row mt-110">
+                <div class="col-md-8 offset-md-2">
+                    <h3 class="question-text">Frequently Asked <span class="question-color">Question</span></h3>
+                    <h1 class="text-center"><img src="assets/Images/brain.png" /></h1>
+                </div>
+            </div>
+            <div class="row mt-100">
+                <div class="col-md-5 offset-md-1">
+                    <div>
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Collapsible Group Item #1
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Collapsible Group Item #2
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Collapsible Group Item #3
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <img src="assets/Images/ask-question.png" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="nav-tabs" class="mt-110">
+        <div class="nav-tab-color">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <h2 class="nav-tab-text">Adult Pshysctrait</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-120"></section>
     <!------------------- JQuery Files Section ------------------->
     <script src="assets/Bootstrap4/js/jquery.slim.min.js"></script>
     <script src="assets/Bootstrap4/js/poper.min.js"></script>
