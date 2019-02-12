@@ -82,9 +82,9 @@ $(function () {
         var scroll = $(window).scrollTop();
 
         if (scroll >= 100) {
-            $("nav").addClass("nav-color sleep nav-trans");
+            $("nav").addClass("nav-color");
         } else {
-            $("nav").removeClass("nav-color sleep nav-trans");
+            $("nav").removeClass("nav-color");
         }
     });
 });
