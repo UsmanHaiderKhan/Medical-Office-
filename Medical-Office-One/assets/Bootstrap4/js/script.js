@@ -2,16 +2,16 @@
 
 /*================== Read More Text ==================*/
 $(function () {
-    var showChar = 100;
-    var moretext = "...";
-    var lesstext = "...";
+    var showChar = 300;
+    var moretext = "Learn More" + '<i class="right-circle ml-3"><span class="fas fa-arrow-right"></span></i>';
+    var lesstext = "Learn Less" + '<i class="right-circle ml-3"><span class="fas fa-arrow-right"></span></i>';
     $('.comments-space').each(function () {
         var content = $(this).html();
         if (content.length > showChar) {
             var show_content = content.substr(0, showChar);
             var hide_content = content.substr(showChar, content.length - showChar);
-            var html = show_content + '<span class="remaining-contents"><span>' + hide_content +
-                '</span><a href="" class="morelinks link-blue" >' + moretext + "<span class='fas fa-arrow-right'></span>" + '</a>'
+            var html = show_content + '<span class="remaining-contents" style="display:block"><span>' + hide_content +
+                '</span><a href="" class="morelinks learn-text" style="display:block;margin-top:68px">' + moretext + '</a>'
                 + '</span>';
             $(this).html(html);
         }
@@ -32,16 +32,16 @@ $(function () {
     });
 });
 $(function () {
-    var showChar = 100;
-    var moretext = "...";
-    var lesstext = "...";
+    var showChar = 130;
+    var moretext = "READ MORE...";
+    var lesstext = "READ LESS...";
     $('.comments-spaces').each(function () {
         var content = $(this).html();
         if (content.length > showChar) {
             var show_content = content.substr(0, showChar);
             var hide_content = content.substr(showChar, content.length - showChar);
-            var html = show_content + '<span class="remaining-contents"><span>' + hide_content +
-                '</span><a href="" class="morelinkss link-blue" >' + moretext + "<span class='fas fa-arrow-right'></span>" + '</a>'
+            var html = show_content + '<span class="remaining-contents" style="display-block"><span> ' + hide_content +
+                '</span><a href="#" class="morelinkss read-text" style="display:block;float:right;margin-top:25px;" >' + moretext + '</a>'
                 + '</span>';
             $(this).html(html);
         }
@@ -61,7 +61,96 @@ $(function () {
         return false;
     });
 });
+$(function () {
+    var showChar = 120;
+    var moretext = "Read More";
+    var lesstext = "Read Less";
+    $('.comments-spacess').each(function () {
+        var content = $(this).html();
+        if (content.length > showChar) {
+            var show_content = content.substr(0, showChar);
+            var hide_content = content.substr(showChar, content.length - showChar);
+            var html = show_content + '<span class="remaining-contents" style="display:block"><span>' + hide_content +
+                '</span><a href="" class="morelinksss read-text-1" style="display:block;margin-top:30px;text-align:center">' + moretext + '</a>'
+                + '</span>';
+            $(this).html(html);
+        }
+    });
 
+    $(".morelinksss").click(function () {
+
+        if ($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
+});
+$(function () {
+    var showChar = 120;
+    var moretext = "Read More";
+    var lesstext = "Read Less";
+    $('.comments-space2').each(function () {
+        var content = $(this).html();
+        if (content.length > showChar) {
+            var show_content = content.substr(0, showChar);
+            var hide_content = content.substr(showChar, content.length - showChar);
+            var html = show_content + '<span class="remaining-contents" style="display:block"><span>' + hide_content +
+                '</span><a href="" class="morelink2 read-text-2" style="display:block;margin-top:30px;text-align:center">' + moretext + '</a>'
+                + '</span>';
+            $(this).html(html);
+        }
+    });
+
+    $(".morelink2").click(function () {
+
+        if ($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
+});
+$(function () {
+    var showChar = 120;
+    var moretext = "Read More";
+    var lesstext = "Read Less";
+    $('.comments-space-1').each(function () {
+        var content = $(this).html();
+        if (content.length > showChar) {
+            var show_content = content.substr(0, showChar);
+            var hide_content = content.substr(showChar, content.length - showChar);
+            var html = show_content + '<span class="remaining-contents" style="display:block"><span>' + hide_content +
+                '</span><a href="" class="morelink1 read-text-3" style="display:block;margin-top:30px;text-align:center">' + moretext + '</a>'
+                + '</span>';
+            $(this).html(html);
+        }
+    });
+
+    $(".morelink1").click(function () {
+
+        if ($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
+});
 /*===================== Smooth Scrolling ======================*/
 $(function () {
     $('a').smoothScroll();
@@ -76,15 +165,26 @@ $(function () {
         });
 });
 
+$(function () {
+    $('.card-header').on('click',
+        function () {
+            $('.card-header').removeClass('accordion-color');
+            $(this).addClass('accordion-color');
+        });
+});
+
 /* ==================== Js Function to give the class on Scroll ================== */
 $(function () {
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
 
         if (scroll >= 100) {
-            $("nav").addClass("nav-color");
+            //$("nav").addClass("nav-bg-color");
+            $("nav").css("background-color", "rgba(255, 255, 255,1)");
+            $("nav").css("opacity", "1");
         } else {
-            $("nav").removeClass("nav-color");
+            $("nav").css("background-color", "rgba(255, 255, 255,0.702)");
+            $("nav").css("opacity", "0.702");
         }
     });
 });
@@ -125,7 +225,8 @@ $(function () {
             1000: {
                 items: 3,
                 nav: true,
-                loop: true
+                loop: true,
+                dots: true
             }
         }
     });
