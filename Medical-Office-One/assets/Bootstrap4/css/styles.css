@@ -34,9 +34,7 @@ html, body {
     scroll-behavior: smooth;
 }
 
-.nav-color {
-    background: #1d2228;
-}
+
 /*================================= 
           Navbar Styling
   =================================*/
@@ -65,6 +63,11 @@ html, body {
     opacity: 0.702;
     width: 100%;
     height: auto;
+}
+
+.nav-color {
+    background-color: rgba(255, 255, 255, 1);
+    opacity: 1;
 }
 
 .nav-trans {
@@ -274,9 +277,44 @@ html, body {
        About Section Styling
   =================================*/
 #about-us {
-    padding: 80px 0;
+    padding: 80px 38px;
     background: #f4f4f4;
 }
+
+.read-text-1 {
+    color: #00a99d;
+    font-size: 20px;
+    font-family: 'PillGothic600mg-Bold';
+}
+
+    .read-text-1:hover {
+        text-decoration: none;
+        color: #00a99d;
+    }
+
+.read-text-2 {
+    text-decoration: none;
+    color: #7b3d7e;
+    font-size: 20px;
+    font-family: 'PillGothic600mg-Bold';
+}
+
+    .read-text-2:hover {
+        text-decoration: none;
+        color: #7b3d7e;
+    }
+
+.read-text-3 {
+    text-decoration: none;
+    color: #f19541;
+    font-size: 20px;
+    font-family: 'PillGothic600mg-Bold';
+}
+
+    .read-text-3:hover {
+        text-decoration: none;
+        color: #f19541;
+    }
 
 .working-area {
     padding: 0 60px;
@@ -284,7 +322,7 @@ html, body {
 
 .about-text {
     color: #0c0c0c;
-    font-size: 46px;
+    font-size: 41px;
     font-weight: bold;
     font-family: 'PillGothic600mg-Bold';
 }
@@ -297,7 +335,7 @@ html, body {
 
 .about-text-desc {
     color: #383838;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
 }
@@ -350,7 +388,7 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 80px 70px;
+    padding: 80px 70px 25px 70px;
 }
 
 .why-text {
@@ -368,10 +406,10 @@ html, body {
 }
 
 .circle-shape {
-    width: 75px;
-    height: 75px;
-    line-height: 34px;
-    padding: 25px;
+    width: 64px;
+    height: 64px;
+    line-height: 30px;
+    padding: 22px;
     font-size: 37px;
     color: #7b3d7e;
     border-radius: 50%;
@@ -380,7 +418,7 @@ html, body {
 }
 
 .why-pera-text {
-    font-size: 19px;
+    font-size: 17px;
     color: #ffffff;
     font-family: 'PillGothic600mg-Semibd';
 }
@@ -388,9 +426,13 @@ html, body {
 .why-bg-color {
     padding: 20px 20px;
     border-radius: 50px;
-    height: 163px;
+    height: 135px;
     width: 100%;
     background-color: #7b3d7e;
+}
+
+.none-style {
+    list-style: none;
 }
 
 .p-relative {
@@ -400,7 +442,25 @@ html, body {
 .p-absolute {
     position: absolute;
 }
+/*================================= 
+      FaQ Section Styling
+  =================================*/
+.accordion .card-header:after {
+    font-family: 'Font Awesome\ 5 Free';
+    content: "\f068";
+    float: right;
+    font-weight: 600; /* Fix version 5.0.9 */
+    color: #ffffff;
+}
 
+.accordion .card-header.collapsed:after {
+    color: #ffffff;
+    content: "\f067";
+}
+
+.accordion-color {
+    background-color: #7b3d7e !important;
+}
 
 .question-text {
     color: #222222;
@@ -413,13 +473,13 @@ html, body {
     color: #7b3d7e;
 }
 
-h1 {
+.lines {
     overflow: hidden;
     text-align: center;
 }
 
-    h1:before,
-    h1:after {
+    .lines:before,
+    .lines:after {
         background-color: #7b3d7e;
         content: "";
         display: inline-block;
@@ -429,19 +489,38 @@ h1 {
         width: 14%;
     }
 
-    h1:before {
+    .lines:before {
         right: 0.5em;
         margin-left: -50%;
     }
 
-    h1:after {
+    .lines:after {
         left: 0.5em;
         margin-right: -50%;
     }
 
+.card-header {
+    background-color: #404040;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
 
+.inside-accordian-text {
+    color: #404040;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
 
+.accordion-text {
+    font-size: 16px;
+    color: #ffffff !important;
+    margin-bottom: 0;
+    font-family: 'PillGothic600mg-Semibd';
+}
 
+/*================================= 
+      Services Section Styling
+  =================================*/
 .nav-tab-color {
     background-color: rgb(155, 81, 160);
     width: 100%;
@@ -451,27 +530,286 @@ h1 {
 
 .nav-tab-text {
     color: #ffffff;
-    font-size: 36px;
+    font-size: 27px;
     text-align: center;
     text-transform: capitalize;
     font-family: 'PillGothic600mg-Bold';
 }
+
+.services-tab-img {
+    /*width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;*/
+}
+
+.service-text {
+    color: #000000;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-family: 'PillGothic600mg-Bold';
+}
+
+.service-sub-text {
+    font-size: 18px;
+    color: #9b51a0;
+    font-family: 'PillGothic600mg-Bold';
+}
+
+.bg-color {
+    background: #f3f6fa;
+    width: 100%;
+    height: auto;
+}
+
+.service-desc {
+    color: #7e7e7e;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.learn-text {
+    z-index: 5;
+    font-size: 20px;
+    color: #9b51a0;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'PillGothic600mg-Bold';
+}
+
+    .learn-text:hover {
+        z-index: 5;
+        text-decoration: none;
+        color: #9b51a0;
+    }
+
+.fa-arrow-right {
+    color: #f3eaf3;
+}
+
+.right-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 10px;
+    background: #703271;
+}
+/*================================= 
+    Recent News Section  Styling
+  =================================*/
+
+.color-one {
+    font-size: 60px;
+    color: #222222;
+    text-transform: uppercase;
+    font-family: 'PillGothic600mg-Bold';
+}
+
+.color-two {
+    font-size: 60px;
+    color: #7b3d7e;
+    text-transform: uppercase;
+    font-family: 'PillGothic600mg-Bold';
+}
+
+.news-main-text {
+    font-size: 23px;
+    color: #7b3d7e;
+    font-family: 'PillGothic600mg-Bold';
+}
+
+.date-text {
+    font-size: 18px;
+    color: #637988;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.news-pera-text {
+    font-size: 15px;
+    color: #637988;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.read-text {
+    font-size: 20px;
+    color: #7b3d7e;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.card-bg-color {
+    padding: 30px 30px;
+    background: #eef5f9;
+}
+
+.slider-padding {
+    padding: 0 100px;
+}
+
+.read-text:hover {
+    text-decoration: none;
+    color: #7b3d7e;
+}
+
+.card-shadow {
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #7b3d7e;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 17px;
+    height: 17px;
+    margin: 5px 7px;
+    background: transparent;
+    border: 3px solid #D6D6D6;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+}
+/*================================= 
+      Contact Section Styling
+  =================================*/
+
+#contact-us {
+    background-size: cover;
+    padding: 2px 150px 40px 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.touch-text {
+    font-size: 45px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'PillGothic600mg-Bold';
+}
+
+.contact-bg-color {
+    padding: 50px 0;
+    background-color: rgba(155, 81, 160, .6);
+}
+
+#input-1::placeholder {
+    color: #dac0dd !important;
+    font-size: 18px !important;
+    font-family: 'PillGothic600mg-Semibd' !important;
+}
+
+.contact-text {
+    color: white;
+    padding: 0 10px;
+    width: 100%;
+    height: 53px;
+    border-width: 4px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    background: transparent;
+    border-radius: 0px;
+}
+
+.contact-text-area {
+    color: white;
+    width: 100%;
+    padding: 8px;
+    border-width: 4px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    background: transparent;
+}
+
+.send-btn {
+    width: 46px;
+    height: 142px;
+    font-size: 23px;
+    color: #d8c8dc;
+    border-width: 4px;
+    font-family: 'PillGothic600mg-Bold';
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.feel-text {
+    color: #ffffff;
+    font-size: 50px;
+    padding: 50px 0;
+    text-transform: uppercase;
+    font-family: 'PillGothic600mg-Bold';
+}
+
+.craft-text {
+    color: #ffffff;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: 'PillGothic600mg-Bold';
+}
+
+.phy-text {
+    color: #bdbdbd;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: 'PillGothic600mg-Bold';
+}
+
+.add-text {
+    color: #e7e7e7;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'PillGothic600mg-Bold';
+}
+
+.add-sub-text {
+    font-size: 18px;
+    color: #929292;
+    font-family: 'PillGothic600mg-Semibd';
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: none;
+    }
+
+#flateIcon a i:hover {
+    color: #0072bc;
+}
+/*.hover-color i {
+    text-decoration: none;
+    color: #0072bc;
+}
+
+    .hover-color i:hover {
+        text-decoration: none;
+        color: #0072bc;
+    }*/
 /*================================= 
           Read More Styling
   =================================*/
-
 .comments-space {
     text-align: justify;
 }
 
 .remaining-contents span {
     display: none;
-}
-
-.footer-line {
-    background: #e6b408;
-    width: 100%;
-    height: 5px;
 }
 
 .page-footer {
@@ -482,7 +820,7 @@ h1 {
 
 .footer-font {
     color: #ffffff;
-    font-size: 22px;
+    font-size: 18px;
     padding-top: 22px;
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
