@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>accordian</title>
+    <link href="assets/Bootstrap4/css/bootstrap.css" rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .accordion .card-header:after {
+            font-family: 'FontAwesome' !important;
+            content: "\f068";
+            float: right;
+        }
+
+        .accordion .card-header.collapsed:after {
+            content: "\f067";
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="accordion" class="accordion">
+            <div class="card m-b-0">
+                <div class="card-header collapsed" aria-expanded="true" data-toggle="collapse" aria-patent="accordion" href="#collapseOne">
+                    <a class="card-title">
+                        Item 1
+                    </a>
+                </div>
+                <div class="card-block collapse " id="collapseOne">
+                    Scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue.
+                </div>
+            </div>
+        </div>
+        <div id="accordion" class="accordion">
+            <div class="card m-b-0">
+                <div class="card-header collapsed" aria-expanded="true" data-toggle="collapse" aria-patent="accordion" href="#collapseTwo">
+                    <a class="card-title">
+                        Item 1
+                    </a>
+                </div>
+                <div class="card-block collapse show" id="collapseTwo">
+                    Scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue.
+                </div>
+            </div>
+        </div>
+        <div id="accordion" class="accordion">
+            <div class="card m-b-0">
+                <div class="card-header collapsed" aria-expanded="true" data-toggle="collapse" aria-patent="accordion" href="#collapseThree">
+                    <a class="card-title">
+                        Item 1
+                    </a>
+                </div>
+                <div class="card-block collapse " id="collapseThree">
+                    Scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue.
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/Bootstrap4/js/jquery.slim.min.js"></script>
+    <script src="assets/Bootstrap4/js/poper.min.js"></script>
+    <script src="assets/Bootstrap4/js/bootstrap.min.js"></script>
+</body>
+</html>
