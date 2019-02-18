@@ -219,7 +219,7 @@ $(function () {
                 nav: true
             },
             600: {
-                items: 3,
+                items: 2,
                 nav: true
             },
             1000: {
@@ -229,5 +229,68 @@ $(function () {
                 dots: true
             }
         }
+    });
+});
+/*===================== Owl Carousel Slider ======================*/
+$(function () {
+    $("#adult").show();
+    $("#forensic").hide();
+    $("#general").hide();
+    $("#acute").hide();
+    $("#emergncey").hide();
+    $("#radiology").hide();
+
+    $("#adult-click").click((e) => {
+        $("#adult").show();
+        $("#forensic").hide();
+        $("#general").hide();
+        $("#acute").hide();
+        $("#emergncey").hide();
+        $("#radiology").hide();
+    });
+    $("#forensic-click").click((e) => {
+        $("#forensic").show();
+        $("#adult").hide();
+        $("#general").hide();
+        $("#acute").hide();
+        $("#emergncey").hide();
+        $("#radiology").hide();
+
+    });
+    $("#rad-click").click((e) => {
+        $("#forensic").hide();
+        $("#adult").hide();
+        $("#general").hide();
+        $("#acute").hide();
+        $("#emergncey").hide();
+        $("#radiology").show();
+
+    });
+    $("#acute-click").click((e) => {
+        $("#forensic").hide();
+        $("#adult").hide();
+        $("#general").hide();
+        $("#acute").show();
+        $("#emergncey").hide();
+        $("#radiology").hide();
+
+    });
+    $("#general-click").click((e) => {
+        $("#forensic").hide();
+        $("#adult").hide();
+        $("#general").show();
+        $("#acute").hide();
+        $("#emergncey").hide();
+        $("#radiology").hide();
+
+    });
+    $("#emergncey-click").click((e) => {
+        $("#forensic").hide();
+        $("#adult").hide();
+        $("#general").hide();
+        $("#acute").hide();
+        $("#emergncey").show();
+        $("#radiology").hide();
+
     });
 });
