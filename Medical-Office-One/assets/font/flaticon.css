@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 14/02/2019 16:37
+  	Creation date: 18/02/2019 13:17
   	*/
 
 @font-face {
@@ -36,3 +36,7 @@ margin-left: 20px;
 .flaticon-pinterest-logo:before { content: "\f103"; }
 .flaticon-behance-logo:before { content: "\f104"; }
 .flaticon-dribble-logo:before { content: "\f105"; }
+.flaticon-facebook-placeholder-for-locate-places-on-maps:before { content: "\f106"; }
+.flaticon-clock-circular-outline:before { content: "\f107"; }
+.flaticon-clock:before { content: "\f108"; }
+.flaticon-old-handphone:before { content: "\f109"; }
