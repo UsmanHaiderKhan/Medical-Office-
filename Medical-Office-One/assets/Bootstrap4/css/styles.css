@@ -40,18 +40,18 @@ html, body {
   =================================*/
 .banner-content {
     width: 100%;
-    top: 50%;
+    padding: 30px 30px;
 }
 
 .banner-text {
-    font-size: 80px;
+    font-size: 67px;
     color: #000000;
     text-transform: uppercase;
     font-family: 'Adelle-ExtraBold';
 }
 
 .banner-desc {
-    font-size: 32px;
+    font-size: 31px;
     color: #1d1d1f;
     font-weight: bold;
     text-transform: capitalize;
@@ -153,9 +153,9 @@ html, body {
 /*================================= 
           Details Section Styling
   =================================*/
-#card_section {
+/*#card_section {
     background-color: #f4f4f4;
-}
+}*/
 
 .card {
     border: 0;
@@ -230,7 +230,7 @@ html, body {
 }
 
 .request-text {
-    font-size: 31px;
+    font-size: 30px;
     color: #ffffff;
     text-transform: uppercase;
     font-family: 'PillGothic600mg-Bold';
@@ -357,6 +357,10 @@ html, body {
     font-size: 30px;
     font-weight: bold;
     font-family: 'PillGothic600mg-Bold';
+}
+
+.card-area-padding {
+    padding: 0 70px;
 }
 
 .cards {
@@ -525,7 +529,7 @@ html, body {
     background-color: rgb(155, 81, 160);
     width: 100%;
     padding: 40px 0;
-    height: 154px;
+    height: auto;
 }
 
 .nav-tab-text {
@@ -537,11 +541,9 @@ html, body {
 }
 
 .services-tab-img {
-    /*width: 50px;
-    height: 50px;
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;*/
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .service-text {
@@ -561,6 +563,10 @@ html, body {
     background: #f3f6fa;
     width: 100%;
     height: auto;
+}
+
+.list-group-item-action {
+    cursor: pointer;
 }
 
 .service-desc {
@@ -789,8 +795,43 @@ a {
         text-decoration: none;
     }
 
-#flateIcon a i:hover {
+.flaticon-dribble-logo:hover:before {
     color: #0072bc;
+}
+
+
+.flaticon-behance-logo:hover:before {
+    color: #0072bc;
+}
+
+.flaticon-facebook-app-symbol:hover:before {
+    color: #0072bc;
+}
+
+.flaticon-pinterest-logo:hover:before {
+    color: #0072bc;
+}
+
+.flaticon-twitter-logo-silhouette:hover:before {
+    color: #0072bc;
+}
+
+.flaticon-google-plus-logo:hover:before {
+    color: #0072bc;
+}
+
+
+
+
+
+
+
+
+
+.bg-send-img {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 /*.hover-color i {
     text-decoration: none;
@@ -1204,7 +1245,9 @@ button:focus {
     box-shadow: none !important;
 }
 
-
+#card_section [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    font-size: 27px;
+}
 /*================ Media Query ===============*/
 @media screen and (max-width: 1024px) {
 }
@@ -1216,15 +1259,823 @@ button:focus {
 }
 
 @media screen and (max-width: 414px) {
+    .banner-content {
+        padding: 110px 30px;
+    }
+
+    .mt-60 {
+        margin-top: 0;
+    }
+
+    .banner-text {
+        font-size: 25px;
+    }
+
+    .banner-desc {
+        font-size: 18px;
+    }
+
+    .btn-contact {
+        width: 200px;
+        height: 66px;
+        font-size: 20px;
+        line-height: 53px;
+    }
+
+    .address-text {
+        font-size: 36px;
+    }
+
+    .address-desc {
+        font-size: 18px;
+    }
+
+    .phone-no {
+        font-size: 20px;
+    }
+
+    .phone-text {
+        font-size: 36px;
+    }
+
+    .open-text {
+        font-size: 30px;
+    }
+
+    .request-text {
+        margin-top: 8px;
+        font-size: 21px;
+    }
+
+    .label-text {
+        font-size: 18px;
+    }
+
+    .about-text {
+        font-size: 28px;
+    }
+
+    .working-area {
+        padding: 20px;
+    }
+
+    .text-desc {
+        font-size: 18px;
+    }
+
+    .quality-text {
+        font-size: 24px;
+    }
+
+    .about-text-desc {
+        font-size: 15px;
+    }
+
+    .lara-text {
+        font-size: 25px;
+    }
+
+    .phy-text {
+        font-size: 18px;
+    }
+
+    .nav-tab-text {
+        font-size: 22px;
+    }
+
+    .card-area-padding {
+        padding: 0 20px;
+    }
+
+    .inside-accordian-text {
+        font-size: 14px;
+    }
+
+    .media-about-center {
+        text-align: center !important;
+    }
+
+    #about-us {
+        padding: 38px 0px;
+    }
+
+    .accordion-text {
+        font-size: 13px;
+    }
+
+    .mt-110 {
+        margin-top: 60px;
+    }
+
+    .media-card-mt {
+        margin-top: 30px;
+    }
+
+    .why-text {
+        font-size: 28px;
+    }
+
+    .why-setting {
+        padding: 40px 20px 25px 20px;
+    }
+
+    .why-desc {
+        font-size: 18px;
+    }
+
+    .why-pera-text {
+        font-size: 14px;
+    }
+
+    .p-relative {
+        position: inherit;
+    }
+
+    .p-absolute {
+        position: inherit;
+    }
+
+    .question-text {
+        font-size: 24px;
+    }
+
+    .media-tab-mt {
+        margin-top: 2rem;
+    }
+
+    .color-one {
+        font-size: 28px;
+    }
+
+    .color-two {
+        font-size: 28px;
+    }
+
+    .slider-padding {
+        padding: 0 20px;
+    }
+
+    .news-main-text {
+        font-size: 19px;
+    }
+
+    .date-text {
+        font-size: 16px;
+    }
+
+    .news-pera-text {
+        font-size: 14px;
+    }
+
+    .read-text {
+        font-size: 17px;
+    }
+
+    #contact-us {
+        padding: 2px 10px 40px 10px;
+    }
+
+    .feel-text {
+        font-size: 26px;
+    }
+
+    .send-btn {
+        width: 100%;
+        height: 44px;
+        font-size: 25px;
+    }
+
+    .margin-top {
+        margin-top: 3rem;
+    }
+
+    .touch-text {
+        font-size: 36px;
+    }
+
+    .mt-38 {
+        margin-top: 0;
+    }
+
+    .media-mt {
+        margin-top: 8px;
+    }
+
+    .footer-font {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 411px) {
+    .banner-content {
+        padding: 110px 30px;
+    }
+
+    .banner-text {
+        font-size: 25px;
+    }
+
+    .banner-desc {
+        font-size: 18px;
+    }
+
+    .btn-contact {
+        width: 200px;
+        height: 66px;
+        font-size: 20px;
+        line-height: 53px;
+    }
+
+    .address-text {
+        font-size: 36px;
+    }
+
+    .address-desc {
+        font-size: 18px;
+    }
+
+    .phone-no {
+        font-size: 20px;
+    }
+
+    .phone-text {
+        font-size: 36px;
+    }
+
+    .open-text {
+        font-size: 30px;
+    }
+
+    .request-text {
+        margin-top: 8px;
+        font-size: 21px;
+    }
+
+    .label-text {
+        font-size: 18px;
+    }
+
+    .about-text {
+        font-size: 28px;
+    }
+
+    .working-area {
+        padding: 20px;
+    }
+
+    .text-desc {
+        font-size: 18px;
+    }
+
+    .quality-text {
+        font-size: 24px;
+    }
+
+    .about-text-desc {
+        font-size: 15px;
+    }
+
+    .lara-text {
+        font-size: 25px;
+    }
+
+    .phy-text {
+        font-size: 18px;
+    }
+
+    .nav-tab-text {
+        font-size: 22px;
+    }
+
+    .card-area-padding {
+        padding: 0 20px;
+    }
+
+    .inside-accordian-text {
+        font-size: 14px;
+    }
+
+    .media-about-center {
+        text-align: center !important;
+    }
+
+    #about-us {
+        padding: 38px 0px;
+    }
+
+    .accordion-text {
+        font-size: 13px;
+    }
+
+    .mt-110 {
+        margin-top: 60px;
+    }
+
+    .media-card-mt {
+        margin-top: 30px;
+    }
+
+    .why-text {
+        font-size: 28px;
+    }
+
+    .why-setting {
+        padding: 40px 20px 25px 20px;
+    }
+
+    .why-desc {
+        font-size: 18px;
+    }
+
+    .why-pera-text {
+        font-size: 14px;
+    }
+
+    .p-relative {
+        position: inherit;
+    }
+
+    .p-absolute {
+        position: inherit;
+    }
+
+    .question-text {
+        font-size: 24px;
+    }
+
+    .media-tab-mt {
+        margin-top: 2rem;
+    }
+
+    .color-one {
+        font-size: 28px;
+    }
+
+    .color-two {
+        font-size: 28px;
+    }
+
+    .slider-padding {
+        padding: 0 20px;
+    }
+
+    .news-main-text {
+        font-size: 19px;
+    }
+
+    .date-text {
+        font-size: 16px;
+    }
+
+    .news-pera-text {
+        font-size: 14px;
+    }
+
+    .read-text {
+        font-size: 17px;
+    }
+
+    #contact-us {
+        padding: 2px 10px 40px 10px;
+    }
+
+    .feel-text {
+        font-size: 26px;
+    }
+
+    .send-btn {
+        width: 100%;
+        height: 44px;
+        font-size: 25px;
+    }
+
+    .margin-top {
+        margin-top: 3rem;
+    }
+
+    .touch-text {
+        font-size: 36px;
+    }
+
+    .mt-38 {
+        margin-top: 0;
+    }
+
+    .media-mt {
+        margin-top: 8px;
+    }
+
+    .footer-font {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 375px) {
+    .banner-content {
+        padding: 110px 30px;
+    }
+
+    .banner-text {
+        font-size: 25px;
+    }
+
+    .banner-desc {
+        font-size: 18px;
+    }
+
+    .btn-contact {
+        width: 200px;
+        height: 66px;
+        font-size: 20px;
+        line-height: 53px;
+    }
+
+    .address-text {
+        font-size: 36px;
+    }
+
+    .address-desc {
+        font-size: 18px;
+    }
+
+    .phone-no {
+        font-size: 20px;
+    }
+
+    .phone-text {
+        font-size: 36px;
+    }
+
+    .open-text {
+        font-size: 30px;
+    }
+
+    .request-text {
+        margin-top: 8px;
+        font-size: 21px;
+    }
+
+    .label-text {
+        font-size: 18px;
+    }
+
+    .about-text {
+        font-size: 28px;
+    }
+
+    .working-area {
+        padding: 20px;
+    }
+
+    .text-desc {
+        font-size: 18px;
+    }
+
+    .quality-text {
+        font-size: 24px;
+    }
+
+    .about-text-desc {
+        font-size: 15px;
+    }
+
+    .lara-text {
+        font-size: 25px;
+    }
+
+    .phy-text {
+        font-size: 18px;
+    }
+
+    .nav-tab-text {
+        font-size: 22px;
+    }
+
+    .card-area-padding {
+        padding: 0 20px;
+    }
+
+    .inside-accordian-text {
+        font-size: 14px;
+    }
+
+    .media-about-center {
+        text-align: center !important;
+    }
+
+    #about-us {
+        padding: 38px 0px;
+    }
+
+    .accordion-text {
+        font-size: 13px;
+    }
+
+    .mt-110 {
+        margin-top: 60px;
+    }
+
+    .media-card-mt {
+        margin-top: 30px;
+    }
+
+    .why-text {
+        font-size: 28px;
+    }
+
+    .why-setting {
+        padding: 40px 20px 25px 20px;
+    }
+
+    .why-desc {
+        font-size: 18px;
+    }
+
+    .why-pera-text {
+        font-size: 14px;
+    }
+
+    .p-relative {
+        position: inherit;
+    }
+
+    .p-absolute {
+        position: inherit;
+    }
+
+    .question-text {
+        font-size: 24px;
+    }
+
+    .media-tab-mt {
+        margin-top: 2rem;
+    }
+
+    .color-one {
+        font-size: 28px;
+    }
+
+    .color-two {
+        font-size: 28px;
+    }
+
+    .slider-padding {
+        padding: 0 20px;
+    }
+
+    .news-main-text {
+        font-size: 19px;
+    }
+
+    .date-text {
+        font-size: 16px;
+    }
+
+    .news-pera-text {
+        font-size: 14px;
+    }
+
+    .read-text {
+        font-size: 17px;
+    }
+
+    #contact-us {
+        padding: 2px 10px 40px 10px;
+    }
+
+    .feel-text {
+        font-size: 26px;
+    }
+
+    .send-btn {
+        width: 100%;
+        height: 44px;
+        font-size: 25px;
+    }
+
+    .margin-top {
+        margin-top: 3rem;
+    }
+
+    .touch-text {
+        font-size: 36px;
+    }
+
+    .mt-38 {
+        margin-top: 0;
+    }
+
+    .media-mt {
+        margin-top: 8px;
+    }
+
+    .footer-font {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 360px) {
+    .banner-content {
+        padding: 110px 30px;
+    }
+
+    .banner-text {
+        font-size: 25px;
+    }
+
+    .banner-desc {
+        font-size: 18px;
+    }
+
+    .btn-contact {
+        width: 200px;
+        height: 66px;
+        font-size: 20px;
+        line-height: 53px;
+    }
+
+    .address-text {
+        font-size: 36px;
+    }
+
+    .address-desc {
+        font-size: 18px;
+    }
+
+    .phone-no {
+        font-size: 20px;
+    }
+
+    .phone-text {
+        font-size: 36px;
+    }
+
+    .open-text {
+        font-size: 30px;
+    }
+
+    .request-text {
+        margin-top: 8px;
+        font-size: 21px;
+    }
+
+    .label-text {
+        font-size: 18px;
+    }
+
+    .about-text {
+        font-size: 28px;
+    }
+
+    .working-area {
+        padding: 20px;
+    }
+
+    .text-desc {
+        font-size: 18px;
+    }
+
+    .quality-text {
+        font-size: 24px;
+    }
+
+    .about-text-desc {
+        font-size: 15px;
+    }
+
+    .lara-text {
+        font-size: 25px;
+    }
+
+    .phy-text {
+        font-size: 18px;
+    }
+
+    .nav-tab-text {
+        font-size: 22px;
+    }
+
+    .card-area-padding {
+        padding: 0 20px;
+    }
+
+    .inside-accordian-text {
+        font-size: 14px;
+    }
+
+    .media-about-center {
+        text-align: center !important;
+    }
+
+    #about-us {
+        padding: 38px 0px;
+    }
+
+    .accordion-text {
+        font-size: 13px;
+    }
+
+    .mt-110 {
+        margin-top: 60px;
+    }
+
+    .media-card-mt {
+        margin-top: 30px;
+    }
+
+    .why-text {
+        font-size: 28px;
+    }
+
+    .why-setting {
+        padding: 40px 20px 25px 20px;
+    }
+
+    .why-desc {
+        font-size: 18px;
+    }
+
+    .why-pera-text {
+        font-size: 14px;
+    }
+
+    .p-relative {
+        position: inherit;
+    }
+
+    .p-absolute {
+        position: inherit;
+    }
+
+    .question-text {
+        font-size: 24px;
+    }
+
+    .media-tab-mt {
+        margin-top: 2rem;
+    }
+
+    .color-one {
+        font-size: 28px;
+    }
+
+    .color-two {
+        font-size: 28px;
+    }
+
+    .slider-padding {
+        padding: 0 20px;
+    }
+
+    .news-main-text {
+        font-size: 19px;
+    }
+
+    .date-text {
+        font-size: 16px;
+    }
+
+    .news-pera-text {
+        font-size: 14px;
+    }
+
+    .read-text {
+        font-size: 17px;
+    }
+
+    #contact-us {
+        padding: 2px 10px 40px 10px;
+    }
+
+    .feel-text {
+        font-size: 26px;
+    }
+
+    .send-btn {
+        width: 100%;
+        height: 44px;
+        font-size: 25px;
+    }
+
+    .margin-top {
+        margin-top: 3rem;
+    }
+
+    .touch-text {
+        font-size: 36px;
+    }
+
+    .mt-38 {
+        margin-top: 0;
+    }
+
+    .media-mt {
+        margin-top: 8px;
+    }
+
+    .footer-font {
+        font-size: 16px;
+    }
 }
 
 /*==================== Media Query For Land Scape Mode =====================*/
@@ -1235,19 +2086,1094 @@ button:focus {
 }
 
 @media screen and (max-width: 823px) and (orientation: landscape) {
+    .open-mt {
+        margin-top: 7px;
+    }
+
+    .banner-content {
+        padding: 78px 30px;
+    }
+
+    .banner-text {
+        font-size: 41px;
+    }
+
+    .banner-desc {
+        font-size: 20px;
+    }
+
+    .btn-contact {
+        width: 200px;
+        height: 66px;
+        font-size: 20px;
+        line-height: 53px;
+    }
+
+    .address-text {
+        font-size: 16px;
+    }
+
+    .address-desc {
+        font-size: 16px;
+    }
+
+    .phone-no {
+        font-size: 16px;
+    }
+
+    .nav-tab-color {
+        padding: 25px 0;
+    }
+
+    .phone-text {
+        font-size: 18px;
+    }
+
+    .open-text {
+        font-size: 20px;
+    }
+
+    .open-mt {
+        margin-top: 6px;
+    }
+
+    .request-text {
+        margin-top: 8px;
+        font-size: 21px;
+    }
+
+    .label-text {
+        font-size: 18px;
+    }
+
+    .about-text {
+        font-size: 23px;
+    }
+
+    .working-area {
+        padding: 20px;
+    }
+
+    .text-desc {
+        font-size: 16px;
+    }
+
+    .quality-text {
+        font-size: 20px;
+    }
+
+    .about-text-desc {
+        font-size: 13px;
+    }
+
+    .lara-text {
+        font-size: 25px;
+    }
+
+    .phy-text {
+        font-size: 18px;
+    }
+
+    .nav-tab-text {
+        font-size: 22px;
+    }
+
+    .card-area-padding {
+        padding: 0 20px;
+    }
+
+    .inside-accordian-text {
+        font-size: 14px;
+    }
+
+    .media-about-center {
+        text-align: center !important;
+    }
+
+    #about-us {
+        padding: 38px 0px;
+    }
+
+    .accordion-text {
+        font-size: 13px;
+    }
+
+    .mt-110 {
+        margin-top: 60px;
+    }
+
+    .media-card-mt {
+        margin-top: 30px;
+    }
+
+    .why-text {
+        font-size: 28px;
+    }
+
+    .why-setting {
+        padding: 40px 20px 25px 20px;
+    }
+
+    .why-desc {
+        font-size: 20px;
+    }
+
+    .why-pera-text {
+        font-size: 20px;
+    }
+
+    .p-relative {
+        position: inherit;
+    }
+
+    .p-absolute {
+        position: inherit;
+    }
+
+    .question-text {
+        font-size: 24px;
+    }
+
+    .media-tab-mt {
+        margin-top: 2rem;
+    }
+
+    .color-one {
+        font-size: 28px;
+    }
+
+    .color-two {
+        font-size: 28px;
+    }
+
+    .slider-padding {
+        padding: 0 20px;
+    }
+
+    .news-main-text {
+        font-size: 19px;
+    }
+
+    .date-text {
+        font-size: 16px;
+    }
+
+    .news-pera-text {
+        font-size: 14px;
+    }
+
+    .read-text {
+        font-size: 17px;
+    }
+
+    #contact-us {
+        padding: 2px 10px 40px 10px;
+    }
+
+    .feel-text {
+        font-size: 26px;
+    }
+
+    .send-btn {
+        width: 100%;
+        height: 45px;
+        font-size: 27px;
+    }
+
+    .margin-top {
+        margin-top: 3rem;
+    }
+
+    .touch-text {
+        font-size: 36px;
+    }
+
+    .mt-38 {
+        margin-top: 0;
+    }
+
+    .media-mt {
+        margin-top: 8px;
+    }
+
+    .footer-font {
+        font-size: 16px;
+    }
+
+    #card_section [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        font-size: 22px;
+    }
+
+    .add-sub-text {
+        font-size: 11px;
+    }
+
+    .mt-60 {
+        margin-top: 0;
+    }
 }
 
 @media screen and (max-width: 740px) and (orientation: landscape) {
 }
 
 @media screen and (max-width: 736px) and (orientation: landscape) {
+    .banner-content {
+        padding: 78px 30px;
+    }
+
+    .banner-text {
+        font-size: 41px;
+    }
+
+    .banner-desc {
+        font-size: 20px;
+    }
+
+    .btn-contact {
+        width: 200px;
+        height: 66px;
+        font-size: 20px;
+        line-height: 53px;
+    }
+
+    .address-text {
+        font-size: 30px;
+    }
+
+    .address-desc {
+        font-size: 18px;
+    }
+
+    .phone-no {
+        font-size: 20px;
+    }
+
+    .nav-tab-color {
+        padding: 25px 0;
+    }
+
+    .phone-text {
+        font-size: 30px;
+    }
+
+    .open-text {
+        font-size: 30px;
+    }
+
+    .request-text {
+        margin-top: 8px;
+        font-size: 21px;
+    }
+
+    .label-text {
+        font-size: 18px;
+    }
+
+    .about-text {
+        font-size: 23px;
+    }
+
+    .working-area {
+        padding: 20px;
+    }
+
+    .text-desc {
+        font-size: 16px;
+    }
+
+    .quality-text {
+        font-size: 20px;
+    }
+
+    .about-text-desc {
+        font-size: 13px;
+    }
+
+    .lara-text {
+        font-size: 25px;
+    }
+
+    .phy-text {
+        font-size: 18px;
+    }
+
+    .nav-tab-text {
+        font-size: 22px;
+    }
+
+    .card-area-padding {
+        padding: 0 20px;
+    }
+
+    .inside-accordian-text {
+        font-size: 14px;
+    }
+
+    .media-about-center {
+        text-align: center !important;
+    }
+
+    #about-us {
+        padding: 38px 0px;
+    }
+
+    .accordion-text {
+        font-size: 13px;
+    }
+
+    .mt-110 {
+        margin-top: 60px;
+    }
+
+    .media-card-mt {
+        margin-top: 30px;
+    }
+
+    .why-text {
+        font-size: 28px;
+    }
+
+    .why-setting {
+        padding: 40px 20px 25px 20px;
+    }
+
+    .why-desc {
+        font-size: 20px;
+    }
+
+    .why-pera-text {
+        font-size: 20px;
+    }
+
+    .p-relative {
+        position: inherit;
+    }
+
+    .p-absolute {
+        position: inherit;
+    }
+
+    .question-text {
+        font-size: 24px;
+    }
+
+    .media-tab-mt {
+        margin-top: 2rem;
+    }
+
+    .color-one {
+        font-size: 28px;
+    }
+
+    .color-two {
+        font-size: 28px;
+    }
+
+    .slider-padding {
+        padding: 0 20px;
+    }
+
+    .news-main-text {
+        font-size: 19px;
+    }
+
+    .date-text {
+        font-size: 16px;
+    }
+
+    .news-pera-text {
+        font-size: 14px;
+    }
+
+    .read-text {
+        font-size: 17px;
+    }
+
+    #contact-us {
+        padding: 2px 10px 40px 10px;
+    }
+
+    .feel-text {
+        font-size: 26px;
+    }
+
+    .send-btn {
+        width: 100%;
+        height: 45px;
+        font-size: 27px;
+    }
+
+    .margin-top {
+        margin-top: 3rem;
+    }
+
+    .touch-text {
+        font-size: 36px;
+    }
+
+    .mt-38 {
+        margin-top: 0;
+    }
+
+    .media-mt {
+        margin-top: 8px;
+    }
+
+    .footer-font {
+        font-size: 16px;
+    }
+
+    #card_section [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        font-size: 22px;
+    }
+
+    .add-sub-text {
+        font-size: 20px;
+    }
+
+    .mt-60 {
+        margin-top: 0;
+    }
 }
 
 @media screen and (max-width: 731px) and (orientation: landscape) {
+    .add-sub-text {
+        font-size: 20px;
+    }
+
+    .banner-content {
+        padding: 78px 30px;
+    }
+
+    .banner-text {
+        font-size: 41px;
+    }
+
+    .banner-desc {
+        font-size: 20px;
+    }
+
+    .btn-contact {
+        width: 200px;
+        height: 66px;
+        font-size: 20px;
+        line-height: 53px;
+    }
+
+    .address-text {
+        font-size: 30px;
+    }
+
+    .address-desc {
+        font-size: 18px;
+    }
+
+    .phone-no {
+        font-size: 20px;
+    }
+
+    .phone-text {
+        font-size: 30px;
+    }
+
+    .open-text {
+        font-size: 30px;
+    }
+
+    .request-text {
+        margin-top: 8px;
+        font-size: 21px;
+    }
+
+    .label-text {
+        font-size: 18px;
+    }
+
+    .about-text {
+        font-size: 28px;
+    }
+
+    .working-area {
+        padding: 20px;
+    }
+
+    .text-desc {
+        font-size: 18px;
+    }
+
+    .quality-text {
+        font-size: 24px;
+    }
+
+    .about-text-desc {
+        font-size: 15px;
+    }
+
+    .lara-text {
+        font-size: 25px;
+    }
+
+    .phy-text {
+        font-size: 18px;
+    }
+
+    .nav-tab-text {
+        font-size: 22px;
+    }
+
+    .card-area-padding {
+        padding: 0 20px;
+    }
+
+    .inside-accordian-text {
+        font-size: 14px;
+    }
+
+    .media-about-center {
+        text-align: center !important;
+    }
+
+    #about-us {
+        padding: 38px 0px;
+    }
+
+    .accordion-text {
+        font-size: 13px;
+    }
+
+    .mt-110 {
+        margin-top: 60px;
+    }
+
+    .media-card-mt {
+        margin-top: 30px;
+    }
+
+    .why-text {
+        font-size: 28px;
+    }
+
+    .why-setting {
+        padding: 40px 20px 25px 20px;
+    }
+
+    .why-desc {
+        font-size: 18px;
+    }
+
+    .why-pera-text {
+        font-size: 14px;
+    }
+
+    .p-relative {
+        position: inherit;
+    }
+
+    .p-absolute {
+        position: inherit;
+    }
+
+    .question-text {
+        font-size: 24px;
+    }
+
+    .media-tab-mt {
+        margin-top: 2rem;
+    }
+
+    .color-one {
+        font-size: 28px;
+    }
+
+    .color-two {
+        font-size: 28px;
+    }
+
+    .slider-padding {
+        padding: 0 20px;
+    }
+
+    .news-main-text {
+        font-size: 19px;
+    }
+
+    .date-text {
+        font-size: 16px;
+    }
+
+    .news-pera-text {
+        font-size: 14px;
+    }
+
+    .read-text {
+        font-size: 17px;
+    }
+
+    #contact-us {
+        padding: 2px 10px 40px 10px;
+    }
+
+    .feel-text {
+        font-size: 26px;
+    }
+
+    .send-btn {
+        width: 100%;
+        height: 44px;
+        font-size: 25px;
+    }
+
+    .margin-top {
+        margin-top: 3rem;
+    }
+
+    .touch-text {
+        font-size: 36px;
+    }
+
+    .mt-38 {
+        margin-top: 0;
+    }
+
+    .media-mt {
+        margin-top: 8px;
+    }
+
+    .footer-font {
+        font-size: 16px;
+    }
+
+    #card_section [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        font-size: 22px;
+    }
 }
 
+
+
 @media screen and (max-width: 667px) and (orientation: landscape) {
+    .banner-content {
+        padding: 78px 30px;
+    }
+
+    .banner-text {
+        font-size: 41px;
+    }
+
+    .banner-desc {
+        font-size: 20px;
+    }
+
+    .btn-contact {
+        width: 200px;
+        height: 66px;
+        font-size: 20px;
+        line-height: 53px;
+    }
+
+    .address-text {
+        font-size: 30px;
+    }
+
+    .address-desc {
+        font-size: 18px;
+    }
+
+    .phone-no {
+        font-size: 20px;
+    }
+
+    .nav-tab-color {
+        padding: 25px 0;
+    }
+
+    .phone-text {
+        font-size: 30px;
+    }
+
+    .open-text {
+        font-size: 30px;
+    }
+
+    .request-text {
+        margin-top: 8px;
+        font-size: 21px;
+    }
+
+    .label-text {
+        font-size: 18px;
+    }
+
+    .about-text {
+        font-size: 23px;
+    }
+
+    .working-area {
+        padding: 20px;
+    }
+
+    .text-desc {
+        font-size: 16px;
+    }
+
+    .quality-text {
+        font-size: 20px;
+    }
+
+    .about-text-desc {
+        font-size: 13px;
+    }
+
+    .lara-text {
+        font-size: 25px;
+    }
+
+    .phy-text {
+        font-size: 18px;
+    }
+
+    .nav-tab-text {
+        font-size: 22px;
+    }
+
+    .card-area-padding {
+        padding: 0 20px;
+    }
+
+    .inside-accordian-text {
+        font-size: 14px;
+    }
+
+    .media-about-center {
+        text-align: center !important;
+    }
+
+    #about-us {
+        padding: 38px 0px;
+    }
+
+    .accordion-text {
+        font-size: 13px;
+    }
+
+    .mt-110 {
+        margin-top: 60px;
+    }
+
+    .media-card-mt {
+        margin-top: 30px;
+    }
+
+    .why-text {
+        font-size: 28px;
+    }
+
+    .why-setting {
+        padding: 40px 20px 25px 20px;
+    }
+
+    .why-desc {
+        font-size: 20px;
+    }
+
+    .why-pera-text {
+        font-size: 20px;
+    }
+
+    .p-relative {
+        position: inherit;
+    }
+
+    .p-absolute {
+        position: inherit;
+    }
+
+    .question-text {
+        font-size: 24px;
+    }
+
+    .media-tab-mt {
+        margin-top: 2rem;
+    }
+
+    .color-one {
+        font-size: 28px;
+    }
+
+    .color-two {
+        font-size: 28px;
+    }
+
+    .slider-padding {
+        padding: 0 20px;
+    }
+
+    .news-main-text {
+        font-size: 19px;
+    }
+
+    .date-text {
+        font-size: 16px;
+    }
+
+    .news-pera-text {
+        font-size: 14px;
+    }
+
+    .read-text {
+        font-size: 17px;
+    }
+
+    #contact-us {
+        padding: 2px 10px 40px 10px;
+    }
+
+    .feel-text {
+        font-size: 26px;
+    }
+
+    .send-btn {
+        width: 100%;
+        height: 45px;
+        font-size: 27px;
+    }
+
+    .margin-top {
+        margin-top: 3rem;
+    }
+
+    .touch-text {
+        font-size: 36px;
+    }
+
+    .mt-38 {
+        margin-top: 0;
+    }
+
+    .media-mt {
+        margin-top: 8px;
+    }
+
+    .footer-font {
+        font-size: 16px;
+    }
+
+    #card_section [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        font-size: 22px;
+    }
+
+    .add-sub-text {
+        font-size: 20px;
+    }
+
+    .mt-60 {
+        margin-top: 0;
+    }
 }
 
 @media screen and (max-width: 640px) and (orientation: landscape) {
+    .banner-content {
+        padding: 78px 30px;
+    }
+
+    .banner-text {
+        font-size: 38px;
+    }
+
+    .banner-desc {
+        font-size: 19px;
+    }
+
+    .btn-contact {
+        width: 200px;
+        height: 66px;
+        font-size: 20px;
+        line-height: 53px;
+    }
+
+    .address-text {
+        font-size: 30px;
+    }
+
+    .address-desc {
+        font-size: 18px;
+    }
+
+    .phone-no {
+        font-size: 20px;
+    }
+
+    .phone-text {
+        font-size: 30px;
+    }
+
+    .open-text {
+        font-size: 30px;
+    }
+
+    .request-text {
+        margin-top: 8px;
+        font-size: 21px;
+    }
+
+    .label-text {
+        font-size: 18px;
+    }
+
+    .about-text {
+        font-size: 28px;
+    }
+
+    .working-area {
+        padding: 20px;
+    }
+
+    .text-desc {
+        font-size: 18px;
+    }
+
+    .quality-text {
+        font-size: 24px;
+    }
+
+    .about-text-desc {
+        font-size: 15px;
+    }
+
+    .lara-text {
+        font-size: 25px;
+    }
+
+    .phy-text {
+        font-size: 18px;
+    }
+
+    .nav-tab-text {
+        font-size: 22px;
+    }
+
+    .card-area-padding {
+        padding: 0 20px;
+    }
+
+    .inside-accordian-text {
+        font-size: 14px;
+    }
+
+    .media-about-center {
+        text-align: center !important;
+    }
+
+    #about-us {
+        padding: 38px 0px;
+    }
+
+    .accordion-text {
+        font-size: 13px;
+    }
+
+    .mt-110 {
+        margin-top: 60px;
+    }
+
+    .media-card-mt {
+        margin-top: 30px;
+    }
+
+    .why-text {
+        font-size: 28px;
+    }
+
+    .why-setting {
+        padding: 40px 20px 25px 20px;
+    }
+
+    .why-desc {
+        font-size: 18px;
+    }
+
+    .why-pera-text {
+        font-size: 14px;
+    }
+
+    .p-relative {
+        position: inherit;
+    }
+
+    .p-absolute {
+        position: inherit;
+    }
+
+    .question-text {
+        font-size: 24px;
+    }
+
+    .media-tab-mt {
+        margin-top: 2rem;
+    }
+
+    .color-one {
+        font-size: 28px;
+    }
+
+    .color-two {
+        font-size: 28px;
+    }
+
+    .slider-padding {
+        padding: 0 20px;
+    }
+
+    .news-main-text {
+        font-size: 19px;
+    }
+
+    .date-text {
+        font-size: 16px;
+    }
+
+    .news-pera-text {
+        font-size: 14px;
+    }
+
+    .read-text {
+        font-size: 17px;
+    }
+
+    #contact-us {
+        padding: 2px 10px 40px 10px;
+    }
+
+    .feel-text {
+        font-size: 26px;
+    }
+
+    .send-btn {
+        width: 100%;
+        height: 44px;
+        font-size: 25px;
+    }
+
+    .margin-top {
+        margin-top: 3rem;
+    }
+
+    .touch-text {
+        font-size: 36px;
+    }
+
+    .mt-38 {
+        margin-top: 0;
+    }
+
+    .media-mt {
+        margin-top: 8px;
+    }
+
+    .footer-font {
+        font-size: 16px;
+    }
+
+    #card_section [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        font-size: 22px;
+    }
 }
