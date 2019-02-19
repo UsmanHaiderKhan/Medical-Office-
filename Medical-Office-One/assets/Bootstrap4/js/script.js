@@ -3,8 +3,8 @@
 /*================== Read More Text ==================*/
 $(function () {
     var showChar = 300;
-    var moretext = "Learn More" + '<i class="right-circle ml-3"><span class="fas fa-arrow-right"></span></i>';
-    var lesstext = "Learn Less" + '<i class="right-circle ml-3"><span class="fas fa-arrow-right"></span></i>';
+    var moretext = "Learn More" + '<i class="right-circle ml-3"><i class="fas fa-arrow-right fa-sm" style="font-weight:600"></i></i>';
+    var lesstext = "Learn Less" + '<i class="right-circle ml-3"><i class="fas fa-arrow-left fa-sm text-white" style="font-weight:600"></i></i>';
     $('.comments-space').each(function () {
         var content = $(this).html();
         if (content.length > showChar) {
@@ -172,7 +172,16 @@ $(function () {
             $(this).addClass('accordion-color');
         });
 });
+$(function () {
 
+});
+$(function () {
+    $('.media-tab-mt').on('click',
+        function () {
+            $('.media-tab-mt').removeClass('dark-active');
+            $(this).addClass('dark-active');
+        });
+});
 /* ==================== Js Function to give the class on Scroll ================== */
 $(function () {
     $(window).scroll(function () {
@@ -208,25 +217,19 @@ $(function () {
 $(function () {
     $('.owl-carousel').owlCarousel({
         loop: true,
-        //autoplay: true,
-        margin: 15,
+        margin: 30,
         dots: true,
+        nav: false,
         responsiveClass: true,
-        slideBy: '3',
         responsive: {
             0: {
                 items: 1,
-                nav: true
             },
             600: {
-                items: 2,
-                nav: true
+                items: 3,
             },
             1000: {
                 items: 3,
-                nav: true,
-                loop: true,
-                dots: true
             }
         }
     });
@@ -241,6 +244,7 @@ $(function () {
     $("#radiology").hide();
 
     $("#adult-click").click((e) => {
+
         $("#adult").show();
         $("#forensic").hide();
         $("#general").hide();
