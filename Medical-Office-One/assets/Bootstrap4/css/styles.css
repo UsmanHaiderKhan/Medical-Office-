@@ -44,8 +44,9 @@ html, body {
 }
 
 .banner-text {
-    font-size: 67px;
+    font-size: 62px;
     color: #000000;
+    letter-spacing: 6px;
     text-transform: uppercase;
     font-family: 'Adelle-ExtraBold';
 }
@@ -133,11 +134,11 @@ html, body {
 
 .btn-contact {
     color: white;
-    width: 300px;
-    height: 100px;
-    font-size: 26px;
+    width: 280px;
+    height: 81px;
+    font-size: 23px;
     border-radius: 50px;
-    line-height: 88px;
+    line-height: 67px;
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
@@ -329,7 +330,7 @@ html, body {
 
 .text-desc {
     color: #0c0c0c;
-    font-size: 32px;
+    font-size: 28px;
     font-family: 'PillGothic600mg-Semibd';
 }
 
@@ -342,11 +343,11 @@ html, body {
 
 .lara-text {
     color: #0c0c0c;
-    font-size: 36px;
+    font-size: 30px;
     font-family: 'PillGothic600mg-Semibd';
 }
 
-.phy-text {
+.phy-texts {
     color: #703271;
     font-size: 26px;
     font-family: 'PillGothic600mg-Semibd';
@@ -449,18 +450,29 @@ html, body {
 /*================================= 
       FaQ Section Styling
   =================================*/
-.accordion .card-header:after {
-    font-family: 'Font Awesome\ 5 Free';
-    content: "\f068";
-    float: right;
-    font-weight: 600; /* Fix version 5.0.9 */
-    color: #ffffff;
+
+.mb-0 > a {
+    display: block;
+    position: relative;
 }
 
-.accordion .card-header.collapsed:after {
-    color: #ffffff;
-    content: "\f067";
-}
+    .mb-0 > a:after {
+        font-family: 'Font Awesome\ 5 Free';
+        content: "\f067";
+        float: right;
+        font-weight: 600;
+        color: #ffffff;
+    }
+
+    .mb-0 > a[aria-expanded="true"]:after {
+        color: #ffffff;
+        content: "\f068";
+    }
+
+
+
+
+
 
 .accordion-color {
     background-color: #7b3d7e !important;
@@ -525,10 +537,14 @@ html, body {
 /*================================= 
       Services Section Styling
   =================================*/
+#nav-section .dark-active {
+    background-color: rgb(123, 61, 126);
+    width: 100%;
+}
+
 .nav-tab-color {
     background-color: rgb(155, 81, 160);
     width: 100%;
-    padding: 40px 0;
     height: auto;
 }
 
@@ -595,6 +611,10 @@ html, body {
     color: #f3eaf3;
 }
 
+.fa-sm {
+    font-size: .634em;
+}
+
 .right-circle {
     width: 30px;
     height: 30px;
@@ -621,7 +641,7 @@ html, body {
 }
 
 .news-main-text {
-    font-size: 23px;
+    font-size: 22px;
     color: #7b3d7e;
     font-family: 'PillGothic600mg-Bold';
 }
@@ -662,9 +682,9 @@ html, body {
 }
 
 .card-shadow {
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.75);
 }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
@@ -682,10 +702,13 @@ html, body {
     transition: opacity .2s ease;
     border-radius: 30px;
 }
+
+.owl-carousel .owl-stage-outer {
+    padding: 30px 0;
+}
 /*================================= 
       Contact Section Styling
   =================================*/
-
 #contact-us {
     background-size: cover;
     padding: 2px 150px 40px 150px;
@@ -734,9 +757,9 @@ html, body {
 }
 
 .send-btn {
-    width: 46px;
-    height: 142px;
-    font-size: 23px;
+    width: 44px;
+    height: 122px;
+    font-size: 19px;
     color: #d8c8dc;
     border-width: 4px;
     font-family: 'PillGothic600mg-Bold';
@@ -785,6 +808,7 @@ html, body {
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
     color: #ffffff;
+    margin-left: 0;
 }
 
 a {
@@ -820,6 +844,15 @@ a {
     color: #0072bc;
 }
 
+.link-style {
+    text-decoration: none;
+    color: #929292;
+}
+
+    .link-style:hover {
+        text-decoration: none;
+        color: #929292;
+    }
 
 
 
@@ -1249,16 +1282,806 @@ button:focus {
     font-size: 27px;
 }
 /*================ Media Query ===============*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1366px ) {
+    .quality-text {
+        font-size: 29px;
+    }
+
+    .why-pera-text {
+        font-size: 15px;
+    }
+
+    .news-main-text {
+        font-size: 20px;
+    }
+
+    .touch-text {
+        font-size: 42px;
+    }
 }
 
-@media screen and (max-width:800px) {
+
+@media screen and (max-width: 1024px) {
+    .open-mt {
+        margin-top: 7px;
+    }
+
+    .banner-content {
+        padding: 78px 30px;
+    }
+
+    .banner-text {
+        font-size: 41px;
+    }
+
+    .banner-desc {
+        font-size: 20px;
+    }
+
+    .btn-contact {
+        width: 200px;
+        height: 66px;
+        font-size: 20px;
+        line-height: 53px;
+    }
+
+    .address-text {
+        font-size: 15px;
+    }
+
+    .address-desc {
+        font-size: 14px;
+    }
+
+    .phone-no {
+        font-size: 15px;
+    }
+
+    .nav-tab-color {
+        padding: 25px 0;
+    }
+
+    .phone-text {
+        font-size: 15px;
+    }
+
+    .open-text {
+        font-size: 15px;
+    }
+
+    .time-text {
+        font-size: 14px;
+    }
+
+    .bg-color-one {
+        padding: 16px 16px;
+    }
+
+    .bg-color-two {
+        padding: 16px 16px;
+    }
+
+    .bg-color-three {
+        padding: 16px 16px;
+    }
+
+    .open-mt {
+        margin-top: 8px;
+    }
+
+    .request-text {
+        margin-top: 8px;
+        font-size: 15px;
+    }
+
+    .label-text {
+        font-size: 12px;
+    }
+
+    .mt-40 {
+        margin-top: 31px;
+    }
+
+    .btn-send {
+        font-size: 12px;
+    }
+
+    .about-text {
+        font-size: 23px;
+    }
+
+
+    .working-area {
+        padding: 20px;
+    }
+
+    .text-desc {
+        font-size: 16px;
+    }
+
+    .quality-text {
+        font-size: 18px;
+    }
+
+    .mt-48 {
+        margin-top: 37px;
+    }
+
+    .about-text-desc {
+        font-size: 13px;
+    }
+
+    .lara-text {
+        font-size: 25px;
+    }
+
+    .phy-text {
+        font-size: 18px;
+    }
+
+    .nav-tab-text {
+        font-size: 19px;
+    }
+
+    .card-area-padding {
+        padding: 0 20px;
+    }
+
+    .inside-accordian-text {
+        font-size: 14px;
+    }
+
+    .media-about-center {
+        text-align: center !important;
+    }
+
+    #about-us {
+        padding: 38px 0px;
+    }
+
+    .accordion-text {
+        font-size: 13px;
+    }
+
+    .mt-110 {
+        margin-top: 60px;
+    }
+
+    .media-card-mt {
+        margin-top: 30px;
+    }
+
+    .why-text {
+        font-size: 28px;
+    }
+
+    .why-setting {
+        padding: 40px 20px 25px 20px;
+    }
+
+    .why-desc {
+        font-size: 20px;
+    }
+
+    .why-pera-text {
+        font-size: 13px;
+    }
+
+    .why-img-mt {
+        margin-top: 96px;
+    }
+    /*.p-relative {
+        position: inherit;
+    }
+
+    .p-absolute {
+        position: inherit;
+    }*/
+
+    .question-text {
+        font-size: 24px;
+    }
+
+    .media-tab-mt {
+        margin-top: 2rem;
+    }
+
+    .color-one {
+        font-size: 28px;
+    }
+
+    .color-two {
+        font-size: 28px;
+    }
+
+    .slider-padding {
+        padding: 0 20px;
+    }
+
+    .news-main-text {
+        font-size: 19px;
+    }
+
+    .date-text {
+        font-size: 16px;
+    }
+
+    .news-pera-text {
+        font-size: 14px;
+    }
+
+    .read-text {
+        font-size: 17px;
+    }
+
+    #contact-us {
+        padding: 2px 10px 40px 10px;
+    }
+
+    .feel-text {
+        font-size: 26px;
+    }
+
+    .send-btn {
+        width: 86%;
+        height: 122px;
+        font-size: 19px;
+    }
+
+
+
+    .touch-text {
+        font-size: 36px;
+    }
+
+    .mt-38 {
+        margin-top: 0;
+    }
+
+    .media-mt {
+        margin-top: 8px;
+    }
+
+    .footer-font {
+        font-size: 16px;
+    }
+
+    #card_section [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        font-size: 22px;
+    }
+
+    .add-sub-text {
+        font-size: 11px;
+    }
+
+    .mt-60 {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .open-mt {
+        margin-top: 7px;
+    }
+
+    .banner-content {
+        padding: 78px 30px;
+    }
+
+    .banner-text {
+        font-size: 41px;
+    }
+
+    .banner-desc {
+        font-size: 20px;
+    }
+
+    .btn-contact {
+        width: 200px;
+        height: 66px;
+        font-size: 20px;
+        line-height: 53px;
+    }
+
+    .address-text {
+        font-size: 15px;
+    }
+
+    .address-desc {
+        font-size: 14px;
+    }
+
+    .phone-no {
+        font-size: 15px;
+    }
+
+    .nav-tab-color {
+        padding: 25px 0;
+    }
+
+    .phone-text {
+        font-size: 15px;
+    }
+
+    .open-text {
+        font-size: 15px;
+    }
+
+    .time-text {
+        font-size: 14px;
+    }
+
+    .bg-color-one {
+        padding: 16px 16px;
+    }
+
+    .bg-color-two {
+        padding: 16px 16px;
+    }
+
+    .bg-color-three {
+        padding: 16px 16px;
+    }
+
+    .open-mt {
+        margin-top: 8px;
+    }
+
+    .request-text {
+        margin-top: 8px;
+        font-size: 15px;
+    }
+
+    .label-text {
+        font-size: 12px;
+    }
+
+    .mt-40 {
+        margin-top: 31px;
+    }
+
+    .btn-send {
+        font-size: 12px;
+    }
+
+    .about-text {
+        font-size: 23px;
+    }
+
+
+    .working-area {
+        padding: 20px;
+    }
+
+    .text-desc {
+        font-size: 16px;
+    }
+
+    .quality-text {
+        font-size: 18px;
+    }
+
+    .mt-48 {
+        margin-top: 37px;
+    }
+
+    .about-text-desc {
+        font-size: 13px;
+    }
+
+    .lara-text {
+        font-size: 25px;
+    }
+
+    .phy-text {
+        font-size: 18px;
+    }
+
+    .nav-tab-text {
+        font-size: 18px;
+    }
+
+    .card-area-padding {
+        padding: 0 20px;
+    }
+
+    .inside-accordian-text {
+        font-size: 14px;
+    }
+
+    .media-about-center {
+        text-align: center !important;
+    }
+
+    #about-us {
+        padding: 38px 0px;
+    }
+
+    .accordion-text {
+        font-size: 13px;
+    }
+
+    .mt-110 {
+        margin-top: 60px;
+    }
+
+    .media-card-mt {
+        margin-top: 30px;
+    }
+
+    .why-text {
+        font-size: 28px;
+    }
+
+    .why-setting {
+        padding: 40px 20px 25px 20px;
+    }
+
+    .why-desc {
+        font-size: 20px;
+    }
+
+    .why-pera-text {
+        font-size: 20px;
+    }
+
+    .p-relative {
+        position: inherit;
+    }
+
+    .p-absolute {
+        position: inherit;
+    }
+
+    .question-text {
+        font-size: 24px;
+    }
+
+    .media-tab-mt {
+        margin-top: 2rem;
+    }
+
+    .color-one {
+        font-size: 28px;
+    }
+
+    .color-two {
+        font-size: 28px;
+    }
+
+    .slider-padding {
+        padding: 0 20px;
+    }
+
+    .news-main-text {
+        font-size: 19px;
+    }
+
+    .date-text {
+        font-size: 16px;
+    }
+
+    .news-pera-text {
+        font-size: 14px;
+    }
+
+    .read-text {
+        font-size: 17px;
+    }
+
+    #contact-us {
+        padding: 2px 10px 40px 10px;
+    }
+
+    .feel-text {
+        font-size: 26px;
+    }
+
+    .send-btn {
+        width: 100%;
+        height: 45px;
+        font-size: 27px;
+    }
+
+    .margin-top {
+        margin-top: 3rem;
+    }
+
+    .touch-text {
+        font-size: 36px;
+    }
+
+    .mt-38 {
+        margin-top: 0;
+    }
+
+    .media-mt {
+        margin-top: 8px;
+    }
+
+    .footer-font {
+        font-size: 16px;
+    }
+
+    #card_section [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        font-size: 22px;
+    }
+
+    .add-sub-text {
+        font-size: 11px;
+    }
+
+    .mt-60 {
+        margin-top: 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .open-mt {
+        margin-top: 7px;
+    }
+
+    .banner-content {
+        padding: 78px 30px;
+    }
+
+    .banner-text {
+        font-size: 41px;
+    }
+
+    .banner-desc {
+        font-size: 20px;
+    }
+
+    .btn-contact {
+        width: 200px;
+        height: 66px;
+        font-size: 20px;
+        line-height: 53px;
+    }
+
+    .address-text {
+        font-size: 15px;
+    }
+
+    .address-desc {
+        font-size: 14px;
+    }
+
+    .phone-no {
+        font-size: 15px;
+    }
+
+    .nav-tab-color {
+        padding: 25px 0;
+    }
+
+    .phone-text {
+        font-size: 15px;
+    }
+
+    .open-text {
+        font-size: 15px;
+    }
+
+    .time-text {
+        font-size: 14px;
+    }
+
+    .bg-color-one {
+        padding: 16px 16px;
+    }
+
+    .bg-color-two {
+        padding: 16px 16px;
+    }
+
+    .bg-color-three {
+        padding: 16px 16px;
+    }
+
+    .open-mt {
+        margin-top: 8px;
+    }
+
+    .request-text {
+        margin-top: 8px;
+        font-size: 15px;
+    }
+
+    .label-text {
+        font-size: 12px;
+    }
+
+    .mt-40 {
+        margin-top: 31px;
+    }
+
+    .btn-send {
+        font-size: 12px;
+    }
+
+    .about-text {
+        font-size: 23px;
+    }
+
+
+    .working-area {
+        padding: 20px;
+    }
+
+    .text-desc {
+        font-size: 16px;
+    }
+
+    .quality-text {
+        font-size: 17px;
+    }
+
+    .mt-48 {
+        margin-top: 37px;
+    }
+
+    .about-text-desc {
+        font-size: 13px;
+    }
+
+    .lara-text {
+        font-size: 25px;
+    }
+
+    .phy-text {
+        font-size: 18px;
+    }
+
+    .nav-tab-text {
+        font-size: 18px;
+    }
+
+    .card-area-padding {
+        padding: 0 20px;
+    }
+
+    .inside-accordian-text {
+        font-size: 14px;
+    }
+
+    .media-about-center {
+        text-align: center !important;
+    }
+
+    #about-us {
+        padding: 38px 0px;
+    }
+
+    .accordion-text {
+        font-size: 13px;
+    }
+
+    .mt-110 {
+        margin-top: 60px;
+    }
+
+    .media-card-mt {
+        margin-top: 30px;
+    }
+
+    .why-text {
+        font-size: 28px;
+    }
+
+    .why-setting {
+        padding: 40px 20px 25px 20px;
+    }
+
+    .why-desc {
+        font-size: 20px;
+    }
+
+    .why-pera-text {
+        font-size: 20px;
+    }
+
+    .p-relative {
+        position: inherit;
+    }
+
+    .p-absolute {
+        position: inherit;
+    }
+
+    .question-text {
+        font-size: 24px;
+    }
+
+    .media-tab-mt {
+        margin-top: 2rem;
+    }
+
+    .color-one {
+        font-size: 28px;
+    }
+
+    .color-two {
+        font-size: 28px;
+    }
+
+    .slider-padding {
+        padding: 0 20px;
+    }
+
+    .news-main-text {
+        font-size: 19px;
+    }
+
+    .date-text {
+        font-size: 16px;
+    }
+
+    .news-pera-text {
+        font-size: 14px;
+    }
+
+    .read-text {
+        font-size: 17px;
+    }
+
+    #contact-us {
+        padding: 2px 10px 40px 10px;
+    }
+
+    .feel-text {
+        font-size: 26px;
+    }
+
+    .send-btn {
+        width: 100%;
+        height: 45px;
+        font-size: 27px;
+    }
+
+    .margin-top {
+        margin-top: 3rem;
+    }
+
+    .touch-text {
+        font-size: 36px;
+    }
+
+    .mt-38 {
+        margin-top: 0;
+    }
+
+    .media-mt {
+        margin-top: 8px;
+    }
+
+    .footer-font {
+        font-size: 16px;
+    }
+
+    #card_section [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        font-size: 22px;
+    }
+
+    .add-sub-text {
+        font-size: 11px;
+    }
+
+    .mt-60 {
+        margin-top: 0;
+    }
 }
 
 @media screen and (max-width: 414px) {
+    .why-img-mt {
+        margin-top: 8px;
+    }
+
+    .open-mt {
+        margin-top: 6px;
+    }
+
     .banner-content {
         padding: 110px 30px;
     }
@@ -1283,7 +2106,7 @@ button:focus {
     }
 
     .address-text {
-        font-size: 36px;
+        font-size: 25px;
     }
 
     .address-desc {
@@ -1295,7 +2118,7 @@ button:focus {
     }
 
     .phone-text {
-        font-size: 36px;
+        font-size: 25px;
     }
 
     .open-text {
@@ -1487,7 +2310,7 @@ button:focus {
     }
 
     .address-text {
-        font-size: 36px;
+        font-size: 25px;
     }
 
     .address-desc {
@@ -1499,7 +2322,7 @@ button:focus {
     }
 
     .phone-text {
-        font-size: 36px;
+        font-size: 25px;
     }
 
     .open-text {
@@ -1691,7 +2514,7 @@ button:focus {
     }
 
     .address-text {
-        font-size: 36px;
+        font-size: 25px;
     }
 
     .address-desc {
@@ -1703,7 +2526,7 @@ button:focus {
     }
 
     .phone-text {
-        font-size: 36px;
+        font-size: 25px;
     }
 
     .open-text {
@@ -1895,7 +2718,7 @@ button:focus {
     }
 
     .address-text {
-        font-size: 36px;
+        font-size: 25px;
     }
 
     .address-desc {
@@ -1907,7 +2730,7 @@ button:focus {
     }
 
     .phone-text {
-        font-size: 36px;
+        font-size: 25px;
     }
 
     .open-text {
@@ -2110,15 +2933,15 @@ button:focus {
     }
 
     .address-text {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .address-desc {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .phone-no {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .nav-tab-color {
@@ -2126,20 +2949,263 @@ button:focus {
     }
 
     .phone-text {
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .open-text {
-        font-size: 20px;
+        font-size: 15px;
     }
 
+    .time-text {
+        font-size: 14px;
+    }
+
+
+
     .open-mt {
-        margin-top: 6px;
+        margin-top: 8px;
     }
 
     .request-text {
         margin-top: 8px;
-        font-size: 21px;
+        font-size: 15px;
+    }
+
+    .label-text {
+        font-size: 12px;
+    }
+
+    .mt-40 {
+        margin-top: 31px;
+    }
+
+    .btn-send {
+        font-size: 12px;
+    }
+
+    .about-text {
+        font-size: 23px;
+    }
+
+
+    .working-area {
+        padding: 20px;
+    }
+
+    .text-desc {
+        font-size: 16px;
+    }
+
+    .quality-text {
+        font-size: 19px;
+    }
+
+    .mt-48 {
+        margin-top: 37px;
+    }
+
+    .about-text-desc {
+        font-size: 13px;
+    }
+
+    .lara-text {
+        font-size: 25px;
+    }
+
+    .phy-text {
+        font-size: 18px;
+    }
+
+    .nav-tab-text {
+        font-size: 22px;
+    }
+
+    .card-area-padding {
+        padding: 0 20px;
+    }
+
+    .inside-accordian-text {
+        font-size: 14px;
+    }
+
+    .media-about-center {
+        text-align: center !important;
+    }
+
+    #about-us {
+        padding: 38px 0px;
+    }
+
+    .accordion-text {
+        font-size: 13px;
+    }
+
+    .mt-110 {
+        margin-top: 60px;
+    }
+
+    .media-card-mt {
+        margin-top: 30px;
+    }
+
+    .why-text {
+        font-size: 28px;
+    }
+
+    .why-setting {
+        padding: 40px 20px 25px 20px;
+    }
+
+    .why-desc {
+        font-size: 20px;
+    }
+
+    .why-pera-text {
+        font-size: 20px;
+    }
+
+    .p-relative {
+        position: inherit;
+    }
+
+    .p-absolute {
+        position: inherit;
+    }
+
+    .question-text {
+        font-size: 24px;
+    }
+
+    .media-tab-mt {
+        margin-top: 2rem;
+    }
+
+    .color-one {
+        font-size: 28px;
+    }
+
+    .color-two {
+        font-size: 28px;
+    }
+
+    .slider-padding {
+        padding: 0 20px;
+    }
+
+    .news-main-text {
+        font-size: 19px;
+    }
+
+    .date-text {
+        font-size: 16px;
+    }
+
+    .news-pera-text {
+        font-size: 14px;
+    }
+
+    .read-text {
+        font-size: 17px;
+    }
+
+    #contact-us {
+        padding: 2px 10px 40px 10px;
+    }
+
+    .feel-text {
+        font-size: 26px;
+    }
+
+    .send-btn {
+        width: 100%;
+        height: 45px;
+        font-size: 27px;
+    }
+
+    .margin-top {
+        margin-top: 3rem;
+    }
+
+    .touch-text {
+        font-size: 36px;
+    }
+
+    .mt-38 {
+        margin-top: 0;
+    }
+
+    .media-mt {
+        margin-top: 8px;
+    }
+
+    .footer-font {
+        font-size: 16px;
+    }
+
+    #card_section [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        font-size: 22px;
+    }
+
+    .add-sub-text {
+        font-size: 11px;
+    }
+
+    .mt-60 {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 740px) and (orientation: landscape) {
+    .open-mt {
+        margin-top: 5px;
+    }
+
+    .banner-content {
+        padding: 78px 30px;
+    }
+
+    .banner-text {
+        font-size: 41px;
+    }
+
+    .banner-desc {
+        font-size: 20px;
+    }
+
+    .btn-contact {
+        width: 200px;
+        height: 66px;
+        font-size: 20px;
+        line-height: 53px;
+    }
+
+    .address-text {
+        font-size: 25px;
+    }
+
+    .address-desc {
+        font-size: 18px;
+    }
+
+    .phone-no {
+        font-size: 20px;
+    }
+
+    .nav-tab-color {
+        padding: 25px 0;
+    }
+
+    .phone-text {
+        font-size: 25px;
+    }
+
+    .open-text {
+        font-size: 24px;
+    }
+
+    .request-text {
+        margin-top: 8px;
+        font-size: 20px;
     }
 
     .label-text {
@@ -2305,7 +3371,7 @@ button:focus {
     }
 
     .add-sub-text {
-        font-size: 11px;
+        font-size: 20px;
     }
 
     .mt-60 {
@@ -2313,10 +3379,11 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 740px) and (orientation: landscape) {
-}
-
 @media screen and (max-width: 736px) and (orientation: landscape) {
+    .open-mt {
+        margin-top: 5px;
+    }
+
     .banner-content {
         padding: 78px 30px;
     }
@@ -2337,7 +3404,7 @@ button:focus {
     }
 
     .address-text {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .address-desc {
@@ -2353,16 +3420,16 @@ button:focus {
     }
 
     .phone-text {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .open-text {
-        font-size: 30px;
+        font-size: 24px;
     }
 
     .request-text {
         margin-top: 8px;
-        font-size: 21px;
+        font-size: 20px;
     }
 
     .label-text {
@@ -2748,9 +3815,11 @@ button:focus {
     }
 }
 
-
-
 @media screen and (max-width: 667px) and (orientation: landscape) {
+    .open-mt {
+        margin-top: 0;
+    }
+
     .banner-content {
         padding: 78px 30px;
     }
