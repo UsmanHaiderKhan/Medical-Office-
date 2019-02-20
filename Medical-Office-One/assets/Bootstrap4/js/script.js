@@ -3,8 +3,8 @@
 /*================== Read More Text ==================*/
 $(function () {
     var showChar = 300;
-    var moretext = "Learn More" + '<i class="right-circle ml-3"><i class="fas fa-arrow-right fa-sm" style="font-weight:600"></i></i>';
-    var lesstext = "Learn Less" + '<i class="right-circle ml-3"><i class="fas fa-arrow-left fa-sm text-white" style="font-weight:600"></i></i>';
+    var moretext = "Learn More" + '<i class="right-circle fas fa-arrow-right fa-sm ml-2" style="font-weight:600"></i>';
+    var lesstext = "Learn Less" + '<i class="right-circle fas fa-arrow-left fa-sm text-white ml-2" style="font-weight:600"></i>';
     $('.comments-space').each(function () {
         var content = $(this).html();
         if (content.length > showChar) {
