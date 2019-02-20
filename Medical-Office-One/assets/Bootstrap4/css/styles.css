@@ -22,9 +22,6 @@
         Font-Family's End
   =================================*/
 
-
-
-
 html, body {
     margin: 0px;
     padding: 0px;
@@ -616,10 +613,10 @@ html, body {
 }
 
 .right-circle {
-    width: 30px;
-    height: 30px;
+    width: 33px;
+    height: 33px;
     border-radius: 50%;
-    padding: 10px;
+    padding: 11px;
     background: #703271;
 }
 /*================================= 
@@ -689,6 +686,7 @@ html, body {
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
     background: #7b3d7e;
+    border: 0px;
 }
 
 .owl-theme .owl-dots .owl-dot span {
@@ -1282,7 +1280,13 @@ button:focus {
     font-size: 27px;
 }
 /*================ Media Query ===============*/
-@media screen and (max-width: 1366px ) {
+@media screen and (max-width: 1500px) {
+    .main-img-mt {
+        margin-top: -33px;
+    }
+}
+
+@media screen and (max-width: 1367px) {
     .quality-text {
         font-size: 29px;
     }
@@ -1298,8 +1302,11 @@ button:focus {
     .touch-text {
         font-size: 42px;
     }
-}
 
+    .main-img-mt {
+        margin-top: 0px;
+    }
+}
 
 @media screen and (max-width: 1024px) {
     .open-mt {
@@ -1335,10 +1342,6 @@ button:focus {
 
     .phone-no {
         font-size: 15px;
-    }
-
-    .nav-tab-color {
-        padding: 25px 0;
     }
 
     .phone-text {
@@ -1467,8 +1470,12 @@ button:focus {
         font-size: 13px;
     }
 
+    .main-img-mt {
+        margin-top: 96px !important;
+    }
+
     .why-img-mt {
-        margin-top: 96px;
+        margin-top: 0px;
     }
     /*.p-relative {
         position: inherit;
@@ -1482,9 +1489,6 @@ button:focus {
         font-size: 24px;
     }
 
-    .media-tab-mt {
-        margin-top: 2rem;
-    }
 
     .color-one {
         font-size: 28px;
@@ -1560,6 +1564,14 @@ button:focus {
 }
 
 @media screen and (max-width: 800px) {
+    .banner-text {
+        letter-spacing: 2px;
+    }
+
+    .main-img-mt {
+        margin-top: 0px !important;
+    }
+
     .open-mt {
         margin-top: 7px;
     }
@@ -1593,10 +1605,6 @@ button:focus {
 
     .phone-no {
         font-size: 15px;
-    }
-
-    .nav-tab-color {
-        padding: 25px 0;
     }
 
     .phone-text {
@@ -1737,9 +1745,6 @@ button:focus {
         font-size: 24px;
     }
 
-    .media-tab-mt {
-        margin-top: 2rem;
-    }
 
     .color-one {
         font-size: 28px;
@@ -1817,8 +1822,20 @@ button:focus {
 }
 
 @media screen and (max-width: 768px) {
+    .main-img-mt {
+        margin-top: 0px !important;
+    }
+
+    .p-5 {
+        padding: 1rem !important;
+    }
+
     .open-mt {
-        margin-top: 7px;
+        margin-top: 5px;
+    }
+
+    .media-align {
+        text-align: center;
     }
 
     .banner-content {
@@ -1841,27 +1858,25 @@ button:focus {
     }
 
     .address-text {
-        font-size: 15px;
+        font-size: 22px;
     }
 
     .address-desc {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .phone-no {
-        font-size: 15px;
+        font-size: 22px;
     }
 
-    .nav-tab-color {
-        padding: 25px 0;
-    }
+
 
     .phone-text {
-        font-size: 15px;
+        font-size: 22px;
     }
 
     .open-text {
-        font-size: 15px;
+        font-size: 22px;
     }
 
     .time-text {
@@ -1880,17 +1895,15 @@ button:focus {
         padding: 16px 16px;
     }
 
-    .open-mt {
-        margin-top: 8px;
-    }
+
 
     .request-text {
-        margin-top: 8px;
-        font-size: 15px;
+        margin-top: 4px;
+        font-size: 20px;
     }
 
     .label-text {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .mt-40 {
@@ -1927,7 +1940,11 @@ button:focus {
     }
 
     .lara-text {
-        font-size: 25px;
+        font-size: 20px;
+    }
+
+    .phy-texts {
+        font-size: 18px;
     }
 
     .phy-text {
@@ -1955,7 +1972,7 @@ button:focus {
     }
 
     .accordion-text {
-        font-size: 13px;
+        font-size: 10px;
     }
 
     .mt-110 {
@@ -1994,9 +2011,6 @@ button:focus {
         font-size: 24px;
     }
 
-    .media-tab-mt {
-        margin-top: 2rem;
-    }
 
     .color-one {
         font-size: 28px;
@@ -2074,6 +2088,10 @@ button:focus {
 }
 
 @media screen and (max-width: 414px) {
+    .main-img-mt {
+        margin-top: 0px !important;
+    }
+
     .why-img-mt {
         margin-top: 8px;
     }
@@ -2290,6 +2308,10 @@ button:focus {
 }
 
 @media screen and (max-width: 411px) {
+    .main-img-mt {
+        margin-top: 0px !important;
+    }
+
     .banner-content {
         padding: 110px 30px;
     }
@@ -2494,6 +2516,10 @@ button:focus {
 }
 
 @media screen and (max-width: 375px) {
+    .main-img-mt {
+        margin-top: 0px !important;
+    }
+
     .banner-content {
         padding: 110px 30px;
     }
@@ -2698,6 +2724,10 @@ button:focus {
 }
 
 @media screen and (max-width: 360px) {
+    .main-img-mt {
+        margin-top: 0px !important;
+    }
+
     .banner-content {
         padding: 110px 30px;
     }
