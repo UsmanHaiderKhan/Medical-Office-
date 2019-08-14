@@ -11,7 +11,7 @@ $(function () {
             var show_content = content.substr(0, showChar);
             var hide_content = content.substr(showChar, content.length - showChar);
             var html = show_content + '<span class="remaining-contents" style="display:block"><span>' + hide_content +
-                '</span><a href="" class="morelinks learn-text" style="display:block;margin-top:68px">' + moretext + '</a>'
+                '</span><a href="" class="morelinks mt-68 learn-text" style="display:block;">' + moretext + '</a>'
                 + '</span>';
             $(this).html(html);
         }

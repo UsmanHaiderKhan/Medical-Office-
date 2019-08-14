@@ -1,4 +1,4 @@
-﻿/*================================= 
+﻿/*=================================
         Font-Family's Start
   =================================*/
 
@@ -18,7 +18,7 @@
     src: url('../../Fonts/PillGothic600mg-Semibd.ttf') format('truetype');
 }
 
-/*================================= 
+/*=================================
         Font-Family's End
   =================================*/
 
@@ -32,7 +32,7 @@ html, body {
 }
 
 
-/*================================= 
+/*=================================
           Navbar Styling
   =================================*/
 .banner-content {
@@ -148,7 +148,7 @@ html, body {
         color: white;
     }
 
-/*================================= 
+/*=================================
           Details Section Styling
   =================================*/
 /*#card_section {
@@ -271,7 +271,7 @@ html, body {
 }
 
 
-/*================================= 
+/*=================================
        About Section Styling
   =================================*/
 #about-us {
@@ -443,8 +443,9 @@ html, body {
 
 .p-absolute {
     position: absolute;
+    top: -75px;
 }
-/*================================= 
+/*=================================
       FaQ Section Styling
   =================================*/
 
@@ -531,7 +532,7 @@ html, body {
     font-family: 'PillGothic600mg-Semibd';
 }
 
-/*================================= 
+/*=================================
       Services Section Styling
   =================================*/
 #nav-section .dark-active {
@@ -619,7 +620,7 @@ html, body {
     padding: 11px;
     background: #703271;
 }
-/*================================= 
+/*=================================
     Recent News Section  Styling
   =================================*/
 
@@ -704,7 +705,7 @@ html, body {
 .owl-carousel .owl-stage-outer {
     padding: 30px 0;
 }
-/*================================= 
+/*=================================
       Contact Section Styling
   =================================*/
 #contact-us {
@@ -873,7 +874,7 @@ a {
         text-decoration: none;
         color: #0072bc;
     }*/
-/*================================= 
+/*=================================
           Read More Styling
   =================================*/
 .comments-space {
@@ -1059,6 +1060,10 @@ a {
 
 .mt-70 {
     margin-top: 70px;
+}
+
+.mt-68 {
+    margin-top: 68px;
 }
 
 .mt-65 {
@@ -1284,6 +1289,10 @@ button:focus {
     .main-img-mt {
         margin-top: -33px;
     }
+
+    .p-absolute {
+        top: 0px;
+    }
 }
 
 @media screen and (max-width: 1367px) {
@@ -1304,7 +1313,7 @@ button:focus {
     }
 
     .main-img-mt {
-        margin-top: 0px;
+        margin-top: -9px;
     }
 }
 
@@ -1477,13 +1486,7 @@ button:focus {
     .why-img-mt {
         margin-top: 0px;
     }
-    /*.p-relative {
-        position: inherit;
-    }
 
-    .p-absolute {
-        position: inherit;
-    }*/
 
     .question-text {
         font-size: 24px;
@@ -1561,11 +1564,19 @@ button:focus {
     .mt-60 {
         margin-top: 40px;
     }
+
+    .mt-68 {
+        margin-top: 10px;
+    }
 }
 
 @media screen and (max-width: 800px) {
     .banner-text {
         letter-spacing: 2px;
+    }
+
+    .media-img-align {
+        text-align: center;
     }
 
     .main-img-mt {
@@ -1821,7 +1832,7 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
     .main-img-mt {
         margin-top: 0px !important;
     }
@@ -2087,7 +2098,7 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 415px) {
     .main-img-mt {
         margin-top: 0px !important;
     }
@@ -2515,7 +2526,7 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
     .main-img-mt {
         margin-top: 0px !important;
     }
@@ -2723,7 +2734,7 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 361px) {
     .main-img-mt {
         margin-top: 0px !important;
     }
@@ -2932,15 +2943,22 @@ button:focus {
 }
 
 /*==================== Media Query For Land Scape Mode =====================*/
-@media screen and (max-width: 1500px) and (orientation: landscape) {
+@media screen and (max-width: 1280px) and (orientation: landscape) {
+    .p-absolute {
+        top: 38px;
+    }
 }
 
 @media screen and (max-width: 1024px) and (orientation: landscape) {
 }
 
-@media screen and (max-width: 823px) and (orientation: landscape) {
+@media screen and (max-width: 824px) and (orientation: landscape) {
     .open-mt {
         margin-top: 7px;
+    }
+
+    .media-img-align {
+        text-align: center;
     }
 
     .banner-content {
@@ -3633,7 +3651,7 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 731px) and (orientation: landscape) {
+@media screen and (max-width: 732px) and (orientation: landscape) {
     .add-sub-text {
         font-size: 20px;
     }
@@ -3845,7 +3863,7 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 667px) and (orientation: landscape) {
+@media screen and (max-width: 668px) and (orientation: landscape) {
     .open-mt {
         margin-top: 0;
     }
@@ -4069,7 +4087,7 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 640px) and (orientation: landscape) {
+@media screen and (max-width: 641px) and (orientation: landscape) {
     .banner-content {
         padding: 78px 30px;
     }
